@@ -3,14 +3,14 @@
 
 -- Instances:
 
-local xyi = Instance.new("ScreenGui", game.Players.PlayerGui)
-local Frame = Instance.new("Frame", game.Players.PlayerGui)
-local TextBox = Instance.new("TextBox", game.Players.PlayerGui)
-local UITextSizeConstraint = Instance.new("UITextSizeConstraint", game.Players.PlayerGui)
-local TextLabel = Instance.new("TextLabel", game.Players.PlayerGui)
-local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint", game.Players.PlayerGui)
-local TextButton = Instance.new("TextButton", game.Players.PlayerGui)
-local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint", game.Players.PlayerGui)
+local xyi = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local TextButton = Instance.new("TextButton")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
@@ -65,7 +65,7 @@ UITextSizeConstraint_3.MaxTextSize = 50
 
 -- Scripts:
 
-local function XGLB_fake_script() -- TextButton.LocalScript 
+local function OPDJ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -79,4 +79,4 @@ local function XGLB_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XGLB_fake_script)()
+coroutine.wrap(OPDJ_fake_script)()
