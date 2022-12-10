@@ -15,7 +15,7 @@ local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
 --Properties:
 
 xyi.Name = "xyi"
-xyi.Parent = game.StarterGui.Folder
+xyi.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 xyi.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = xyi
@@ -65,7 +65,7 @@ UITextSizeConstraint_3.MaxTextSize = 50
 
 -- Scripts:
 
-local function OPDJ_fake_script() -- TextButton.LocalScript 
+local function ASVS_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -79,4 +79,4 @@ local function OPDJ_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(OPDJ_fake_script)()
+coroutine.wrap(ASVS_fake_script)()
