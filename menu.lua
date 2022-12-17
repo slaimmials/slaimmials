@@ -112,7 +112,6 @@ TPTO.BackgroundTransparency = 0.650
 TPTO.BorderSizePixel = 0
 TPTO.Position = UDim2.new(0.041015625, 0, 0.0330188684, 0)
 TPTO.Size = UDim2.new(0, 458, 0, 97)
-TPTO.Visible = false
 
 TextButton.Parent = TPTO
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -209,7 +208,7 @@ Start.TextWrapped = true
 
 -- Scripts:
 
-local function SBDWMRG_fake_script() -- Home.LocalScript 
+local function IDHI_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -218,8 +217,8 @@ local function SBDWMRG_fake_script() -- Home.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
 	end)
 end
-coroutine.wrap(SBDWMRG_fake_script)()
-local function QAZV_fake_script() -- Player.LocalScript 
+coroutine.wrap(IDHI_fake_script)()
+local function MXHNPXI_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -228,16 +227,16 @@ local function QAZV_fake_script() -- Player.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
 	end)
 end
-coroutine.wrap(QAZV_fake_script)()
-local function XEHV_fake_script() -- Close.LocalScript 
+coroutine.wrap(MXHNPXI_fake_script)()
+local function BUOH_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Remove()
 	end)
 end
-coroutine.wrap(XEHV_fake_script)()
-local function MTEKAI_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(BUOH_fake_script)()
+local function NEYV_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local test = nil
@@ -282,8 +281,8 @@ local function MTEKAI_fake_script() -- TextButton.LocalScript
 		---------------------------------------------------
 	end)
 end
-coroutine.wrap(MTEKAI_fake_script)()
-local function MBFBGB_fake_script() -- FrameM.LocalScript 
+coroutine.wrap(NEYV_fake_script)()
+local function YOWZZE_fake_script() -- FrameM.LocalScript 
 	local script = Instance.new('LocalScript', FrameM)
 
 	frame = script.Parent
@@ -291,4 +290,4 @@ local function MBFBGB_fake_script() -- FrameM.LocalScript
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(MBFBGB_fake_script)()
+coroutine.wrap(YOWZZE_fake_script)()
