@@ -85,14 +85,14 @@ Frame_2.Parent = ScrollingFrame
 Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame_2.BackgroundTransparency = 0.650
 Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.041015625, 0, 0.0262730718, 0)
-Frame_2.Size = UDim2.new(0, 458, 0, 49)
+Frame_2.Position = UDim2.new(0.041015625, 0, 0.0321791545, 0)
+Frame_2.Size = UDim2.new(0, 458, 0, 77)
 
 TextButton.Parent = Frame_2
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 0.600
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.Position = UDim2.new(0.69650656, 0, 0.142857149, 0)
+TextButton.Position = UDim2.new(0.703056753, 0, 0.272727281, 0)
 TextButton.Size = UDim2.new(0, 123, 0, 36)
 TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "Update list"
@@ -104,21 +104,21 @@ ScrollingFrame_2.Active = true
 ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(204, 204, 204)
 ScrollingFrame_2.BorderSizePixel = 0
 ScrollingFrame_2.Position = UDim2.new(0.0262008738, 0, 0.142857149, 0)
-ScrollingFrame_2.Size = UDim2.new(0, 292, 0, 35)
+ScrollingFrame_2.Size = UDim2.new(0, 292, 0, 56)
 ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 20, 0)
 ScrollingFrame_2.ScrollBarThickness = 6
 
 -- Scripts:
 
-local function ALTNV_fake_script() -- Close.LocalScript 
+local function NFYTBDG_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Remove()
 	end)
 end
-coroutine.wrap(ALTNV_fake_script)()
-local function KVFLPA_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(NFYTBDG_fake_script)()
+local function WFLEMG_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local test = nil
@@ -137,20 +137,29 @@ local function KVFLPA_fake_script() -- TextButton.LocalScript
 		---------------------------------------------------
 		print(test) --debug
 		---------------------------------------------------0, 0, 0.224, 0
-		pos = UDim2.new(0, 0, 0, 0)
-		tb = Instance.new("TextButton", script.Parent.Parent.ScrollingFrame)
-		tb.Size = UDim2.new(0, 286, 0, 22)
-		tb.Position = pos
-		tb = nil
-		test = test-1
-		for i = 1, test do
-			pos = pos + UDim2.new(0, 0, 0.020, 0)
-			tb = Instance.new("TextButton", script.Parent.Parent.ScrollingFrame)
-			tb.Size = UDim2.new(0, 286, 0, 22)
-			tb.Position = pos
-			--tb.Text = 
-			tb = nil
+		pos = UDim2.new(0, 0, -0.020, 0)
+		---------------------------------------------------
+		for i,v in pairs(game.Players:GetDescendants()) do
+			if v.ClassName == "Player" then
+				pos = pos + UDim2.new(0, 0, 0.020, 0)
+				tb = Instance.new("TextButton", script.Parent.Parent.ScrollingFrame)
+				tb.Size = UDim2.new(0, 286, 0, 22)
+				tb.Text = v.Name
+				tb.Name = v.Name
+				tb.Position = pos
+				tb = nil
+			end
 		end
+		---------------------------------------------------
 	end)
 end
-coroutine.wrap(KVFLPA_fake_script)()
+coroutine.wrap(WFLEMG_fake_script)()
+local function JIESJ_fake_script() -- FrameM.LocalScript 
+	local script = Instance.new('LocalScript', FrameM)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(JIESJ_fake_script)()
