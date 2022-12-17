@@ -144,7 +144,7 @@ local function KVFLPA_fake_script() -- TextButton.LocalScript
 		tb = nil
 		test = test-1
 		for i = 1, test do
-			pos = pos + UDim2.new(0, 0, 0.224, 0)
+			pos = pos + UDim2.new(0, 0, 0.112, 0)
 			tb = Instance.new("TextButton", script.Parent.Parent.ScrollingFrame)
 			tb.Size = UDim2.new(0, 286, 0, 22)
 			tb.Position = pos
