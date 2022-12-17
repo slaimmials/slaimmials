@@ -19,11 +19,15 @@ local TPTO = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local TextLabel = Instance.new("TextLabel")
+local SPAM = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
-local Home_2 = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
 local TextLabel_3 = Instance.new("TextLabel")
-local ImageLabel = Instance.new("ImageLabel")
+local Home_2 = Instance.new("Frame")
 local TextLabel_4 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
 local Start = Instance.new("TextLabel")
 
 --Properties:
@@ -130,6 +134,7 @@ ScrollingFrame.BackgroundColor3 = Color3.fromRGB(204, 204, 204)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.0262008738, 0, 0.266568482, 0)
 ScrollingFrame.Size = UDim2.new(0, 292, 0, 56)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 150)
 ScrollingFrame.CanvasSize = UDim2.new(0, 0, 20, 0)
 ScrollingFrame.ScrollBarThickness = 7
 
@@ -144,16 +149,56 @@ TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 14.000
 TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 
-TextLabel_2.Parent = FrameM
+SPAM.Name = "SPAM"
+SPAM.Parent = MAIN
+SPAM.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SPAM.BackgroundTransparency = 0.650
+SPAM.BorderSizePixel = 0
+SPAM.Position = UDim2.new(0.041015625, 0, 0.243528873, 0)
+SPAM.Size = UDim2.new(0, 458, 0, 67)
+
+TextButton_2.Parent = SPAM
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 0.600
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.Position = UDim2.new(0.790392995, 0, 0.417910457, 0)
+TextButton_2.Size = UDim2.new(0, 83, 0, 27)
+TextButton_2.Font = Enum.Font.SourceSansBold
+TextButton_2.Text = "Spam [OFF]"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+TextLabel_2.Parent = SPAM
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.029296875, 0, 0, 0)
-TextLabel_2.Size = UDim2.new(0, 445, 0, 32)
+TextLabel_2.Position = UDim2.new(0.0262008738, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 292, 0, 25)
 TextLabel_2.Font = Enum.Font.SourceSansBold
-TextLabel_2.Text = "BrookHack"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 22.000
+TextLabel_2.Text = "Spam messages"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
 TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+TextBox.Parent = SPAM
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0262008738, 0, 0.373134315, 0)
+TextBox.Size = UDim2.new(0, 329, 0, 33)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+TextLabel_3.Parent = FrameM
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.029296875, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 445, 0, 32)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "BrookHack"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 22.000
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
 
 Home_2.Name = "Home"
 Home_2.Parent = FrameM
@@ -163,16 +208,16 @@ Home_2.Position = UDim2.new(0, 0, 0.113207549, 0)
 Home_2.Size = UDim2.new(0, 512, 0, 240)
 Home_2.Visible = false
 
-TextLabel_3.Parent = Home_2
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.359375, 0, 0.075000003, 0)
-TextLabel_3.Size = UDim2.new(0, 164, 0, 17)
-TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "BrookHaven Hack"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 24.000
-TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_4.Parent = Home_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.359375, 0, 0.075000003, 0)
+TextLabel_4.Size = UDim2.new(0, 164, 0, 17)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "BrookHaven Hack"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 24.000
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
 
 ImageLabel.Parent = Home_2
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -181,18 +226,18 @@ ImageLabel.Position = UDim2.new(0.041015625, 0, 0.0785377473, 0)
 ImageLabel.Size = UDim2.new(0, 150, 0, 150)
 ImageLabel.Image = "http://www.roblox.com/asset/?id=11847532498"
 
-TextLabel_4.Parent = Home_2
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(0.359375, 0, 0.191666663, 0)
-TextLabel_4.Size = UDim2.new(0, 276, 0, 122)
-TextLabel_4.Font = Enum.Font.SourceSans
-TextLabel_4.Text = "HackGui created by slaimmials and D3LTAREX                            thanks for using my scripts"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 24.000
-TextLabel_4.TextWrapped = true
-TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
-TextLabel_4.TextYAlignment = Enum.TextYAlignment.Top
+TextLabel_5.Parent = Home_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.359375, 0, 0.191666663, 0)
+TextLabel_5.Size = UDim2.new(0, 276, 0, 122)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "HackGui created by slaimmials and D3LTAREX                            thanks for using my scripts"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 24.000
+TextLabel_5.TextWrapped = true
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_5.TextYAlignment = Enum.TextYAlignment.Top
 
 Start.Name = "Start"
 Start.Parent = FrameM
@@ -208,7 +253,7 @@ Start.TextWrapped = true
 
 -- Scripts:
 
-local function IDHI_fake_script() -- Home.LocalScript 
+local function GSRIIUW_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -217,8 +262,8 @@ local function IDHI_fake_script() -- Home.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
 	end)
 end
-coroutine.wrap(IDHI_fake_script)()
-local function MXHNPXI_fake_script() -- Player.LocalScript 
+coroutine.wrap(GSRIIUW_fake_script)()
+local function MTBM_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -227,16 +272,16 @@ local function MXHNPXI_fake_script() -- Player.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
 	end)
 end
-coroutine.wrap(MXHNPXI_fake_script)()
-local function BUOH_fake_script() -- Close.LocalScript 
+coroutine.wrap(MTBM_fake_script)()
+local function BFLAKNR_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Remove()
 	end)
 end
-coroutine.wrap(BUOH_fake_script)()
-local function NEYV_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(BFLAKNR_fake_script)()
+local function HKFNRV_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local test = nil
@@ -281,8 +326,36 @@ local function NEYV_fake_script() -- TextButton.LocalScript
 		---------------------------------------------------
 	end)
 end
-coroutine.wrap(NEYV_fake_script)()
-local function YOWZZE_fake_script() -- FrameM.LocalScript 
+coroutine.wrap(HKFNRV_fake_script)()
+local function NFHIQ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local A_1 = nil
+	local A_2 = "All"
+	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+	
+	local cc = 0
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if cc == 0 then
+			cc = 1
+			script.Parent.Text = "Spam [ON]"
+		elseif cc == 1 then
+			cc = 0
+			script.Parent.Text = "Spam [OFF]"
+		end
+	end)
+	
+	while wait(3.5) do
+		if cc == 1 then
+			A_1 = script.Parent.Parent.TextBox.Text
+			Event:FireServer(A_1, A_2)
+		end
+	end
+end
+coroutine.wrap(NFHIQ_fake_script)()
+local function KFSBGJ_fake_script() -- FrameM.LocalScript 
 	local script = Instance.new('LocalScript', FrameM)
 
 	frame = script.Parent
@@ -290,4 +363,4 @@ local function YOWZZE_fake_script() -- FrameM.LocalScript
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(YOWZZE_fake_script)()
+coroutine.wrap(KFSBGJ_fake_script)()
