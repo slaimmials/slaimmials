@@ -16,6 +16,7 @@ local ScrollingFrame = Instance.new("ScrollingFrame")
 local Frame_2 = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
@@ -85,17 +86,17 @@ Frame_2.Parent = ScrollingFrame
 Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame_2.BackgroundTransparency = 0.650
 Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.041015625, 0, 0.0321791545, 0)
-Frame_2.Size = UDim2.new(0, 458, 0, 77)
+Frame_2.Position = UDim2.new(0.041015625, 0, 0.0330188684, 0)
+Frame_2.Size = UDim2.new(0, 458, 0, 97)
 
 TextButton.Parent = Frame_2
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 0.600
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.Position = UDim2.new(0.703056753, 0, 0.272727281, 0)
+TextButton.Position = UDim2.new(0.703056753, 0, 0.365510792, 0)
 TextButton.Size = UDim2.new(0, 123, 0, 36)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Update list"
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Update player list"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
 
@@ -103,22 +104,33 @@ ScrollingFrame_2.Parent = Frame_2
 ScrollingFrame_2.Active = true
 ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(204, 204, 204)
 ScrollingFrame_2.BorderSizePixel = 0
-ScrollingFrame_2.Position = UDim2.new(0.0262008738, 0, 0.142857149, 0)
+ScrollingFrame_2.Position = UDim2.new(0.0262008738, 0, 0.266568482, 0)
 ScrollingFrame_2.Size = UDim2.new(0, 292, 0, 56)
 ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 20, 0)
 ScrollingFrame_2.ScrollBarThickness = 6
 
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0262008738, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 292, 0, 25)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Teleport To"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
 -- Scripts:
 
-local function NFYTBDG_fake_script() -- Close.LocalScript 
+local function OCWNCB_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Remove()
 	end)
 end
-coroutine.wrap(NFYTBDG_fake_script)()
-local function WFLEMG_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(OCWNCB_fake_script)()
+local function GHKQLT_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local test = nil
@@ -137,24 +149,34 @@ local function WFLEMG_fake_script() -- TextButton.LocalScript
 		---------------------------------------------------
 		print(test) --debug
 		---------------------------------------------------0, 0, 0.224, 0
-		pos = UDim2.new(0, 0, -0.020, 0)
+		pos = UDim2.new(0, 0, -0.011, 0)
 		---------------------------------------------------
 		for i,v in pairs(game.Players:GetDescendants()) do
 			if v.ClassName == "Player" then
-				pos = pos + UDim2.new(0, 0, 0.020, 0)
+				pos = pos + UDim2.new(0, 0, 0.011, 0)
 				tb = Instance.new("TextButton", script.Parent.Parent.ScrollingFrame)
 				tb.Size = UDim2.new(0, 286, 0, 22)
 				tb.Text = v.Name
 				tb.Name = v.Name
 				tb.Position = pos
+				local function UJKYN_fake_script()
+					local script = Instance.new("LocalScript", tb)
+					
+					local btn = script.Parent.Name
+					
+					script.Parent.MouseButton1Click:Connect(function()
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[btn].Character.HumanoidRootPart.CFrame
+					end)
+				end
+				coroutine.wrap(UJKYN_fake_script)()
 				tb = nil
 			end
 		end
 		---------------------------------------------------
 	end)
 end
-coroutine.wrap(WFLEMG_fake_script)()
-local function JIESJ_fake_script() -- FrameM.LocalScript 
+coroutine.wrap(GHKQLT_fake_script)()
+local function MWAZZ_fake_script() -- FrameM.LocalScript 
 	local script = Instance.new('LocalScript', FrameM)
 
 	frame = script.Parent
@@ -162,4 +184,4 @@ local function JIESJ_fake_script() -- FrameM.LocalScript
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(JIESJ_fake_script)()
+coroutine.wrap(MWAZZ_fake_script)()
