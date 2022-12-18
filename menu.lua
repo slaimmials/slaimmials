@@ -86,6 +86,7 @@ local TextBox_2 = Instance.new("TextBox")
 local TextButton_13 = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
 local UICorner_18 = Instance.new("UICorner")
+local Num = Instance.new("NumberValue")
 
 --Properties:
 
@@ -345,6 +346,7 @@ Start.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Start.BackgroundTransparency = 1.000
 Start.Position = UDim2.new(0.083984375, 0, 0.254716992, 0)
 Start.Size = UDim2.new(0, 425, 0, 155)
+Start.Visible = false
 Start.Font = Enum.Font.SourceSansBold
 Start.Text = "Please select page"
 Start.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -686,7 +688,6 @@ Login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Login.BackgroundTransparency = 1.000
 Login.Position = UDim2.new(0, 0, 0.103773586, 0)
 Login.Size = UDim2.new(0, 512, 0, 243)
-Login.Visible = false
 
 TextLabel_9.Parent = Login
 TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -728,9 +729,11 @@ UICorner_17.Parent = TextButton_13
 UICorner_18.CornerRadius = UDim.new(0, 18)
 UICorner_18.Parent = FrameM
 
+Num.Parent = Outfit
+Num.Name = "Num"
 -- Scripts:
 
-local function WCLF_fake_script() -- Home.LocalScript 
+local function TIUMDDD_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -741,8 +744,8 @@ local function WCLF_fake_script() -- Home.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Login.Visible = false
 	end)
 end
-coroutine.wrap(WCLF_fake_script)()
-local function VTKYE_fake_script() -- Player.LocalScript 
+coroutine.wrap(TIUMDDD_fake_script)()
+local function TYNX_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -753,12 +756,14 @@ local function VTKYE_fake_script() -- Player.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Login.Visible = false
 	end)
 end
-coroutine.wrap(VTKYE_fake_script)()
-local function QFTZD_fake_script() -- Outfit.LocalScript 
+coroutine.wrap(TYNX_fake_script)()
+local function MYDZ_fake_script() -- Outfit.LocalScript 
 	local script = Instance.new('LocalScript', Outfit)
+	
+	local nim = script.Parent.Num
 
 	script.Parent.MouseButton1Click:Connect(function()
-		if script.UICorner.Value == true then
+		if nim.Value == 1 then
 			script.Parent.Parent.Parent.Parent.FrameM.MAIN.Visible = false
 			script.Parent.Parent.Parent.Parent.FrameM.Home.Visible = false
 			script.Parent.Parent.Parent.Parent.FrameM.OUTFIT.Visible = true
@@ -776,22 +781,22 @@ local function QFTZD_fake_script() -- Outfit.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QFTZD_fake_script)()
-local function NGIAYO_fake_script() -- TextLabel.RGB_Script 
+coroutine.wrap(MYDZ_fake_script)()
+local function GRET_fake_script() -- TextLabel.RGB_Script 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	-- Made By Auradomix --
 	-- Visit My Channel On YT and Twitch = @Auradomix
-	
+
 	-- PUT "RGB_GUI" ON STARTERGUI
 	-- PUT THIS ON ANY FRAME OR BUTTON OR BOX OR ...
 	-- ONLY ADAPTED FOR GUI, Please Referance To my Other Model For Brick
-	
+
 	-- Local Script = Client
 	-- Script = Server
-	
+
 	-- For more fast Server Put them as a Local Scrpit for Gui
-	
+
 	while wait() do
 		script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
 		for i = 0,255,10 do
@@ -820,8 +825,8 @@ local function NGIAYO_fake_script() -- TextLabel.RGB_Script
 		end
 	end
 end
-coroutine.wrap(NGIAYO_fake_script)()
-local function MFMXVFC_fake_script() -- VIP.LocalScript 
+coroutine.wrap(GRET_fake_script)()
+local function UCRXMI_fake_script() -- VIP.LocalScript 
 	local script = Instance.new('LocalScript', VIP)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -832,16 +837,16 @@ local function MFMXVFC_fake_script() -- VIP.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
 	end)
 end
-coroutine.wrap(MFMXVFC_fake_script)()
-local function NHTO_fake_script() -- Close.LocalScript 
+coroutine.wrap(UCRXMI_fake_script)()
+local function LUSS_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Remove()
 	end)
 end
-coroutine.wrap(NHTO_fake_script)()
-local function QXKF_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(LUSS_fake_script)()
+local function LGSIZW_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local test = nil
@@ -872,9 +877,9 @@ local function QXKF_fake_script() -- TextButton.LocalScript
 				tb.Position = pos
 				local function UJKYN_fake_script()
 					local script = Instance.new("LocalScript", tb)
-					
+
 					local btn = script.Parent.Name
-					
+
 					script.Parent.MouseButton1Click:Connect(function()
 						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[btn].Character.HumanoidRootPart.CFrame
 					end)
@@ -886,17 +891,17 @@ local function QXKF_fake_script() -- TextButton.LocalScript
 		---------------------------------------------------
 	end)
 end
-coroutine.wrap(QXKF_fake_script)()
-local function LWXPJK_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(LGSIZW_fake_script)()
+local function JCFCKOQ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local A_1 = nil
 	local A_2 = "All"
 	local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
-	
+
 	local cc = 0
-	
-	
+
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if cc == 0 then
 			cc = 1
@@ -906,7 +911,7 @@ local function LWXPJK_fake_script() -- TextButton_2.LocalScript
 			script.Parent.Text = "Spam [OFF]"
 		end
 	end)
-	
+
 	while wait(3.5) do
 		if cc == 1 then
 			A_1 = script.Parent.Parent.TextBox.Text
@@ -914,175 +919,224 @@ local function LWXPJK_fake_script() -- TextButton_2.LocalScript
 		end
 	end
 end
-coroutine.wrap(LWXPJK_fake_script)()
-local function RHGROOL_fake_script() -- FrameM.LocalScript 
+coroutine.wrap(JCFCKOQ_fake_script)()
+local function HPARRP_fake_script() -- FrameM.LocalScript 
 	local script = Instance.new('LocalScript', FrameM)
 
-	frame = script.Parent
+	local frame = script.Parent
 	frame.Draggable = true
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(RHGROOL_fake_script)()
-local function VUEPR_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(HPARRP_fake_script)()
+local function NCPHIP_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local A_1 = "wear"
 	local A_2 = nil
 	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 7969960859
 		Event:FireServer(A_1, A_2)
 	end)
-	
+
 end
-coroutine.wrap(VUEPR_fake_script)()
-local function NSRPC_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(NCPHIP_fake_script)()
+local function DWKTO_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local A_1 = "wear"
 	local A_2 = nil
 	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 5802829986
 		Event:FireServer(A_1, A_2)
 	end)
-	
+
 end
-coroutine.wrap(NSRPC_fake_script)()
-local function MJSFJTH_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(DWKTO_fake_script)()
+local function YURKKN_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local A_1 = "wear"
 	local A_2 = nil
 	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 6380262775
 		Event:FireServer(A_1, A_2)
 	end)
-	
+
 end
-coroutine.wrap(MJSFJTH_fake_script)()
-local function CNLIT_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(YURKKN_fake_script)()
+local function SNDK_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	local A_1 = "outfit"
 	local A_2 = nil
 	local A_3 = nil
 	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = "9938141001"
 		A_3 = "9938141001"
 		Event:FireServer(A_1, A_2, A_3)
 	end)
 end
-coroutine.wrap(CNLIT_fake_script)()
-local function RISQ_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(SNDK_fake_script)()
+local function IOPTZ_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	local A_1 = "outfit"
 	local A_2 = nil
 	local A_3 = nil
 	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = "3024364251"
 		A_3 = "3024364251"
 		Event:FireServer(A_1, A_2, A_3)
 	end)
 end
-coroutine.wrap(RISQ_fake_script)()
-local function MNLZ_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(IOPTZ_fake_script)()
+local function UVTDXW_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	local A_1 = "outfit"
 	local A_2 = nil
 	local A_3 = nil
 	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = "11300550181"
 		A_3 = "11300550181"
 		Event:FireServer(A_1, A_2, A_3)
 	end)
 end
-coroutine.wrap(MNLZ_fake_script)()
-local function VGYDEWZ_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(UVTDXW_fake_script)()
+local function TBRGSS_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	local A_1 = "outfit"
 	local A_2 = nil
 	local A_3 = nil
 	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = "11300547179"
 		A_3 = "11300547179"
 		Event:FireServer(A_1, A_2, A_3)
 	end)
 end
-coroutine.wrap(VGYDEWZ_fake_script)()
-local function ZGEEX_fake_script() -- TextButton_10.LocalScript 
+coroutine.wrap(TBRGSS_fake_script)()
+local function FVLSFY_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
 
 	local A_1 = "wear"
 	local A_2 = nil
 	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 10552317835
 		Event:FireServer(A_1, A_2)
 	end)
-	
+
 end
-coroutine.wrap(ZGEEX_fake_script)()
-local function XFJJFT_fake_script() -- TextButton_11.LocalScript 
+coroutine.wrap(FVLSFY_fake_script)()
+local function BJIVD_fake_script() -- TextButton_11.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_11)
 
 	local A_1 = "wear"
 	local A_2 = nil
 	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 8526714465
 		Event:FireServer(A_1, A_2)
 	end)
-	
+
 end
-coroutine.wrap(XFJJFT_fake_script)()
-local function QLOXHD_fake_script() -- TextButton_12.LocalScript 
+coroutine.wrap(BJIVD_fake_script)()
+local function BNYKVX_fake_script() -- TextButton_12.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_12)
 
 	local A_1 = "wear"
 	local A_2 = nil
 	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 10977196907
 		Event:FireServer(A_1, A_2)
 	end)
-	
-end
-coroutine.wrap(QLOXHD_fake_script)()
-local function DGDZDG_fake_script() -- TextButton_13.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_13)
 
+end
+coroutine.wrap(BNYKVX_fake_script)()
+local function ZKXZ_fake_script() -- TextButton_13.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_13)
+	
+	local tbb = script.Parent.Parent.TextBox
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		if script.Parent.Parent.TextBox.Text == "2022VIPACTIVATIONCODE_HPPYNY" then
-			script.Parent.Parent.Parent.Repositories.Outfit.LocalScript.UICorner.Value = true
-			script.Parent.Parent.TextBox.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		if tbb.Text == "dev" then
+			script.Parent.Parent.Parent.Repositories.Outfit.Num.Value = 1
+			tbb.BackgroundColor3 = Color3.fromRGB(0,255,0)
 			wait(1)
-			script.Parent.Parent.TextBox.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			tbb.BackgroundColor3 = Color3.fromRGB(255,255,255)
 		else
-			script.Parent.Parent.TextBox.Text = ""
-			script.Parent.Parent.TextBox.BackgroundColor3 = Color3.fromRGB(255,0,0)
+			tbb.Text = ""
+			tbb.BackgroundColor3 = Color3.fromRGB(255,0,0)
 			wait(1)
-			script.Parent.Parent.TextBox.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			tbb.BackgroundColor3 = Color3.fromRGB(255,255,255)
 		end
 	end)
 end
-coroutine.wrap(DGDZDG_fake_script)()
+coroutine.wrap(ZKXZ_fake_script)()
+local function bypass_fix() -- TextButton_13.LocalScript 
+	local script = Instance.new('LocalScript', BH)
+	
+	local na = game.Players.LocalPlayer
+	
+    while wait(0.01) do
+        if na.Name ~= "Slaimmials2" or na.Name ~= "agent_379" then
+            for i,v in pairs(game.CoreGui:GetDescendants()) do
+            	for i,b in pairs(v:GetDescendants()) do
+            		if b.Name == "SideMenu" then
+            			for i,n in pairs(b:GetDescendants()) do
+            				if n.Name == "Title" then
+            					if n.Text == "DEX" then
+            						game.Players.LocalPlayer:Kick("DarkDex Detected!")
+            					end
+            				end
+            			end
+            		end
+        		end
+        	end
+        	if OUTFIT.Visible == true then
+        		if Outfit.Num.Value >= 1 or Outfit.Num.Value <= 1 then
+        			game.Players.LocalPlayer:Kick("Try to bypass")
+        		end
+        	end
+        end
+    end
+end
+coroutine.wrap(bypass_fix)()
+
+--[[
+while wait(0.001) do
+	for i,v in pairs(game.CoreGui:GetDescendants()) do
+		for i,b in pairs(v:GetDescendants()) do
+			if b.Name == "SideMenu" then
+				for i,n in pairs(b:GetDescendants()) do
+					if n.Name == "Title" then
+						if n.Text == "DEX" then
+							game.Players.LocalPlayer:Kick("DarkDex Detected!")
+						end
+					end
+				end
+			end
+		end
+	end
+end
+--]]
