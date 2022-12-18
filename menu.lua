@@ -57,6 +57,30 @@ local FSBO = Instance.new("Frame")
 local ImageLabel_6 = Instance.new("ImageLabel")
 local TextButton_7 = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
+local PCM = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
+local Min = Instance.new("Frame")
+local TextLabel_8 = Instance.new("TextLabel")
+local GSB = Instance.new("Frame")
+local ImageLabel_7 = Instance.new("ImageLabel")
+local TextButton_8 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local GST = Instance.new("Frame")
+local ImageLabel_8 = Instance.new("ImageLabel")
+local TextButton_9 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local MBB = Instance.new("Frame")
+local ImageLabel_9 = Instance.new("ImageLabel")
+local TextButton_10 = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local BaBa = Instance.new("Frame")
+local ImageLabel_10 = Instance.new("ImageLabel")
+local TextButton_11 = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local MK32 = Instance.new("Frame")
+local ImageLabel_11 = Instance.new("ImageLabel")
+local TextButton_12 = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
 
 --Properties:
 
@@ -334,13 +358,14 @@ OUTFIT.BorderSizePixel = 0
 OUTFIT.Position = UDim2.new(0, 0, 0.114157237, 0)
 OUTFIT.Size = UDim2.new(0, 512, 0, 239)
 OUTFIT.Visible = false
+OUTFIT.CanvasPosition = Vector2.new(0, 300)
 
 HeadPhones.Name = "HeadPhones"
 HeadPhones.Parent = OUTFIT
 HeadPhones.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
 HeadPhones.BackgroundTransparency = 0.450
 HeadPhones.BorderSizePixel = 0
-HeadPhones.Position = UDim2.new(0.029296875, 0, 0.0235450119, 0)
+HeadPhones.Position = UDim2.new(0.029296875, 0, 0.0628531873, 0)
 HeadPhones.Size = UDim2.new(0, 225, 0, 55)
 
 ImageLabel_2.Parent = HeadPhones
@@ -368,7 +393,7 @@ Neck.Parent = OUTFIT
 Neck.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
 Neck.BackgroundTransparency = 0.450
 Neck.BorderSizePixel = 0
-Neck.Position = UDim2.new(0.5234375, 0, 0.0233472213, 0)
+Neck.Position = UDim2.new(0.5234375, 0, 0.0626553968, 0)
 Neck.Size = UDim2.new(0, 211, 0, 55)
 
 ImageLabel_3.Parent = Neck
@@ -396,7 +421,7 @@ Glasses.Parent = OUTFIT
 Glasses.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
 Glasses.BackgroundTransparency = 0.450
 Glasses.BorderSizePixel = 0
-Glasses.Position = UDim2.new(0.029296875, 0, 0.149443656, 0)
+Glasses.Position = UDim2.new(0.029296875, 0, 0.188751832, 0)
 Glasses.Size = UDim2.new(0, 225, 0, 55)
 
 ImageLabel_4.Parent = Glasses
@@ -424,7 +449,7 @@ POUT.Parent = OUTFIT
 POUT.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
 POUT.BackgroundTransparency = 0.450
 POUT.BorderSizePixel = 0
-POUT.Position = UDim2.new(0.5234375, 0, 0.149133384, 0)
+POUT.Position = UDim2.new(0.5234375, 0, 0.451020181, 0)
 POUT.Size = UDim2.new(0, 211, 0, 55)
 
 ImageLabel_5.Parent = POUT
@@ -452,7 +477,7 @@ FSBO.Parent = OUTFIT
 FSBO.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
 FSBO.BackgroundTransparency = 0.450
 FSBO.BorderSizePixel = 0
-FSBO.Position = UDim2.new(0.029296875, 0, 0.275229812, 0)
+FSBO.Position = UDim2.new(0.029296875, 0, 0.451330453, 0)
 FSBO.Size = UDim2.new(0, 225, 0, 55)
 
 ImageLabel_6.Parent = FSBO
@@ -475,9 +500,186 @@ TextButton_7.TextSize = 24.000
 UICorner_12.CornerRadius = UDim.new(0, 18)
 UICorner_12.Parent = TextButton_7
 
+PCM.Name = "PCM"
+PCM.Parent = OUTFIT
+PCM.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PCM.BackgroundTransparency = 0.700
+PCM.BorderSizePixel = 0
+PCM.Position = UDim2.new(0.029296875, 0, 0.0162232649, 0)
+PCM.Size = UDim2.new(0, 464, 0, 17)
+
+TextLabel_7.Parent = PCM
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Size = UDim2.new(0, 463, 0, 17)
+TextLabel_7.Font = Enum.Font.SourceSansBold
+TextLabel_7.Text = "PMC \"Wagner\""
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 14.000
+
+Min.Name = "Min"
+Min.Parent = OUTFIT
+Min.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Min.BackgroundTransparency = 0.700
+Min.BorderSizePixel = 0
+Min.Position = UDim2.new(0.029296875, 0, 0.577543974, 0)
+Min.Size = UDim2.new(0, 464, 0, 17)
+
+TextLabel_8.Parent = Min
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(-9.31322575e-10, 0, 2.38418579e-07, 0)
+TextLabel_8.Size = UDim2.new(0, 463, 0, 17)
+TextLabel_8.Font = Enum.Font.SourceSansBold
+TextLabel_8.Text = "Ministry of Defense"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 14.000
+
+GSB.Name = "GSB"
+GSB.Parent = OUTFIT
+GSB.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+GSB.BackgroundTransparency = 0.450
+GSB.BorderSizePixel = 0
+GSB.Position = UDim2.new(0.029296875, 0, 0.63686502, 0)
+GSB.Size = UDim2.new(0, 225, 0, 55)
+
+ImageLabel_7.Parent = GSB
+ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_7.BackgroundTransparency = 1.000
+ImageLabel_7.Position = UDim2.new(0.1127299, 0, 0, 0)
+ImageLabel_7.Size = UDim2.new(0, 44, 0, 54)
+ImageLabel_7.Image = "http://www.roblox.com/asset/?id=11848625616"
+
+TextButton_8.Parent = GSB
+TextButton_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.BackgroundTransparency = 0.700
+TextButton_8.Position = UDim2.new(0.488004893, 0, 0.109090909, 0)
+TextButton_8.Size = UDim2.new(0, 107, 0, 42)
+TextButton_8.Font = Enum.Font.SourceSansBold
+TextButton_8.Text = "Wear"
+TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.TextSize = 24.000
+
+UICorner_13.CornerRadius = UDim.new(0, 18)
+UICorner_13.Parent = TextButton_8
+
+GST.Name = "GST"
+GST.Parent = OUTFIT
+GST.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+GST.BackgroundTransparency = 0.450
+GST.BorderSizePixel = 0
+GST.Position = UDim2.new(0.5234375, 0, 0.636554718, 0)
+GST.Size = UDim2.new(0, 211, 0, 55)
+
+ImageLabel_8.Parent = GST
+ImageLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_8.BackgroundTransparency = 1.000
+ImageLabel_8.Position = UDim2.new(0.0853080601, 0, 0.0217695758, 0)
+ImageLabel_8.Size = UDim2.new(0, 44, 0, 53)
+ImageLabel_8.Image = "http://www.roblox.com/asset/?id=11848624149"
+
+TextButton_9.Parent = GST
+TextButton_9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.BackgroundTransparency = 0.700
+TextButton_9.Position = UDim2.new(0.424442649, 0, 0.145454541, 0)
+TextButton_9.Size = UDim2.new(0, 107, 0, 42)
+TextButton_9.Font = Enum.Font.SourceSansBold
+TextButton_9.Text = "Wear"
+TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_9.TextSize = 24.000
+
+UICorner_14.CornerRadius = UDim.new(0, 18)
+UICorner_14.Parent = TextButton_9
+
+MBB.Name = "MBB"
+MBB.Parent = OUTFIT
+MBB.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+MBB.BackgroundTransparency = 0.450
+MBB.BorderSizePixel = 0
+MBB.Position = UDim2.new(0.5234375, 0, 0.188441575, 0)
+MBB.Size = UDim2.new(0, 211, 0, 55)
+
+ImageLabel_9.Parent = MBB
+ImageLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_9.BackgroundTransparency = 1.000
+ImageLabel_9.Position = UDim2.new(0.0470942631, 0, 0.145454541, 0)
+ImageLabel_9.Size = UDim2.new(0, 63, 0, 38)
+ImageLabel_9.Image = "http://www.roblox.com/asset/?id=11848622813"
+
+TextButton_10.Parent = MBB
+TextButton_10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_10.BackgroundTransparency = 0.700
+TextButton_10.Position = UDim2.new(0.424442649, 0, 0.145454541, 0)
+TextButton_10.Size = UDim2.new(0, 107, 0, 42)
+TextButton_10.Font = Enum.Font.SourceSansBold
+TextButton_10.Text = "Wear"
+TextButton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_10.TextSize = 24.000
+
+UICorner_15.CornerRadius = UDim.new(0, 18)
+UICorner_15.Parent = TextButton_10
+
+BaBa.Name = "BaBa"
+BaBa.Parent = OUTFIT
+BaBa.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+BaBa.BackgroundTransparency = 0.450
+BaBa.BorderSizePixel = 0
+BaBa.Position = UDim2.new(0.5234375, 0, 0.320517063, 0)
+BaBa.Size = UDim2.new(0, 211, 0, 55)
+
+ImageLabel_10.Parent = BaBa
+ImageLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_10.BackgroundTransparency = 1.000
+ImageLabel_10.Position = UDim2.new(0.10870564, 0, 0.145454541, 0)
+ImageLabel_10.Size = UDim2.new(0, 40, 0, 38)
+ImageLabel_10.Image = "http://www.roblox.com/asset/?id=11848619319"
+
+TextButton_11.Parent = BaBa
+TextButton_11.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_11.BackgroundTransparency = 0.700
+TextButton_11.Position = UDim2.new(0.424442649, 0, 0.145454541, 0)
+TextButton_11.Size = UDim2.new(0, 107, 0, 42)
+TextButton_11.Font = Enum.Font.SourceSansBold
+TextButton_11.Text = "Wear"
+TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_11.TextSize = 24.000
+
+UICorner_16.CornerRadius = UDim.new(0, 18)
+UICorner_16.Parent = TextButton_11
+
+MK32.Name = "MK32"
+MK32.Parent = OUTFIT
+MK32.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+MK32.BackgroundTransparency = 0.450
+MK32.BorderSizePixel = 0
+MK32.Position = UDim2.new(0.029296875, 0, 0.320827305, 0)
+MK32.Size = UDim2.new(0, 225, 0, 55)
+
+ImageLabel_11.Parent = MK32
+ImageLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_11.BackgroundTransparency = 1.000
+ImageLabel_11.Position = UDim2.new(0.1127299, 0, 0.145454541, 0)
+ImageLabel_11.Size = UDim2.new(0, 43, 0, 38)
+ImageLabel_11.Image = "http://www.roblox.com/asset/?id=11848621509"
+
+TextButton_12.Parent = MK32
+TextButton_12.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_12.BackgroundTransparency = 0.700
+TextButton_12.Position = UDim2.new(0.488004893, 0, 0.109090909, 0)
+TextButton_12.Size = UDim2.new(0, 107, 0, 42)
+TextButton_12.Font = Enum.Font.SourceSansBold
+TextButton_12.Text = "Wear"
+TextButton_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_12.TextSize = 24.000
+
+UICorner_17.CornerRadius = UDim.new(0, 18)
+UICorner_17.Parent = TextButton_12
+
 -- Scripts:
 
-local function DULEYXS_fake_script() -- Home.LocalScript 
+local function DNTICL_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -487,8 +689,8 @@ local function DULEYXS_fake_script() -- Home.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
 	end)
 end
-coroutine.wrap(DULEYXS_fake_script)()
-local function EJUNV_fake_script() -- Player.LocalScript 
+coroutine.wrap(DNTICL_fake_script)()
+local function XNINMIE_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -498,8 +700,8 @@ local function EJUNV_fake_script() -- Player.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
 	end)
 end
-coroutine.wrap(EJUNV_fake_script)()
-local function CZOYFJB_fake_script() -- Outfit.LocalScript 
+coroutine.wrap(XNINMIE_fake_script)()
+local function JGPZPHB_fake_script() -- Outfit.LocalScript 
 	local script = Instance.new('LocalScript', Outfit)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -509,8 +711,8 @@ local function CZOYFJB_fake_script() -- Outfit.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
 	end)
 end
-coroutine.wrap(CZOYFJB_fake_script)()
-local function HMQY_fake_script() -- Profile.LocalScript 
+coroutine.wrap(JGPZPHB_fake_script)()
+local function UFGW_fake_script() -- Profile.LocalScript 
 	local script = Instance.new('LocalScript', Profile)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -519,16 +721,16 @@ local function HMQY_fake_script() -- Profile.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
 	end)
 end
-coroutine.wrap(HMQY_fake_script)()
-local function JSTVGNG_fake_script() -- Close.LocalScript 
+coroutine.wrap(UFGW_fake_script)()
+local function ZCHQQIC_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Remove()
 	end)
 end
-coroutine.wrap(JSTVGNG_fake_script)()
-local function SWTR_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(ZCHQQIC_fake_script)()
+local function QSKK_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local test = nil
@@ -573,8 +775,8 @@ local function SWTR_fake_script() -- TextButton.LocalScript
 		---------------------------------------------------
 	end)
 end
-coroutine.wrap(SWTR_fake_script)()
-local function MMTJCGS_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(QSKK_fake_script)()
+local function HAZZAJQ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local A_1 = nil
@@ -601,8 +803,8 @@ local function MMTJCGS_fake_script() -- TextButton_2.LocalScript
 		end
 	end
 end
-coroutine.wrap(MMTJCGS_fake_script)()
-local function QQYFW_fake_script() -- FrameM.LocalScript 
+coroutine.wrap(HAZZAJQ_fake_script)()
+local function LSDIFWP_fake_script() -- FrameM.LocalScript 
 	local script = Instance.new('LocalScript', FrameM)
 
 	frame = script.Parent
@@ -610,8 +812,8 @@ local function QQYFW_fake_script() -- FrameM.LocalScript
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(QQYFW_fake_script)()
-local function TWFBWN_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(LSDIFWP_fake_script)()
+local function AEXLW_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local A_1 = "wear"
@@ -624,8 +826,8 @@ local function TWFBWN_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(TWFBWN_fake_script)()
-local function MLLUI_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(AEXLW_fake_script)()
+local function WWJX_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local A_1 = "wear"
@@ -638,8 +840,8 @@ local function MLLUI_fake_script() -- TextButton_4.LocalScript
 	end)
 	
 end
-coroutine.wrap(MLLUI_fake_script)()
-local function AWRBTP_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(WWJX_fake_script)()
+local function AZUOK_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local A_1 = "wear"
@@ -652,8 +854,8 @@ local function AWRBTP_fake_script() -- TextButton_5.LocalScript
 	end)
 	
 end
-coroutine.wrap(AWRBTP_fake_script)()
-local function KDBSJQ_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(AZUOK_fake_script)()
+local function YNSIJUY_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	local A_1 = "outfit"
@@ -667,8 +869,8 @@ local function KDBSJQ_fake_script() -- TextButton_6.LocalScript
 		Event:FireServer(A_1, A_2, A_3)
 	end)
 end
-coroutine.wrap(KDBSJQ_fake_script)()
-local function TZBNNCF_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(YNSIJUY_fake_script)()
+local function TLEKYH_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	local A_1 = "outfit"
@@ -682,4 +884,76 @@ local function TZBNNCF_fake_script() -- TextButton_7.LocalScript
 		Event:FireServer(A_1, A_2, A_3)
 	end)
 end
-coroutine.wrap(TZBNNCF_fake_script)()
+coroutine.wrap(TLEKYH_fake_script)()
+local function EQMRH_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	local A_1 = "outfit"
+	local A_2 = nil
+	local A_3 = nil
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		A_2 = "11300550181"
+		A_3 = "11300550181"
+		Event:FireServer(A_1, A_2, A_3)
+	end)
+end
+coroutine.wrap(EQMRH_fake_script)()
+local function JHPQP_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	local A_1 = "outfit"
+	local A_2 = nil
+	local A_3 = nil
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		A_2 = "11300547179"
+		A_3 = "11300547179"
+		Event:FireServer(A_1, A_2, A_3)
+	end)
+end
+coroutine.wrap(JHPQP_fake_script)()
+local function APVL_fake_script() -- TextButton_10.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_10)
+
+	local A_1 = "wear"
+	local A_2 = nil
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		A_2 = 10552317835
+		Event:FireServer(A_1, A_2)
+	end)
+	
+end
+coroutine.wrap(APVL_fake_script)()
+local function ZWVAEJ_fake_script() -- TextButton_11.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	local A_1 = "wear"
+	local A_2 = nil
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		A_2 = 8526714465
+		Event:FireServer(A_1, A_2)
+	end)
+	
+end
+coroutine.wrap(ZWVAEJ_fake_script)()
+local function ZVSVQ_fake_script() -- TextButton_12.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_12)
+
+	local A_1 = "wear"
+	local A_2 = nil
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		A_2 = 10977196907
+		Event:FireServer(A_1, A_2)
+	end)
+	
+end
+coroutine.wrap(ZVSVQ_fake_script)()
