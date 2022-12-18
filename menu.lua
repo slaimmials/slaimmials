@@ -1079,7 +1079,7 @@ local function ZKXZ_fake_script() -- TextButton_13.LocalScript
 	local tbb = script.Parent.Parent.TextBox
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if tbb.Text == "dev" then
+		if tbb.Text == "li6F6G6LWZSiwdh1cYMFsnscDSa6uQFQmMFkT717" then
 			script.Parent.Parent.Parent.Repositories.Outfit.Num.Value = 1
 			tbb.BackgroundColor3 = Color3.fromRGB(0,255,0)
 			wait(1)
