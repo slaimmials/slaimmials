@@ -15,11 +15,10 @@ local UICorner_3 = Instance.new("UICorner")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local UICorner_4 = Instance.new("UICorner")
-local Profile = Instance.new("TextButton")
+local VIP = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local UICorner_6 = Instance.new("UICorner")
 local Close = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local Frame_2 = Instance.new("Frame")
 local MAIN = Instance.new("ScrollingFrame")
 local TPTO = Instance.new("Frame")
@@ -40,23 +39,23 @@ local OUTFIT = Instance.new("ScrollingFrame")
 local HeadPhones = Instance.new("Frame")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local TextButton_3 = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 local Neck = Instance.new("Frame")
 local ImageLabel_3 = Instance.new("ImageLabel")
 local TextButton_4 = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local Glasses = Instance.new("Frame")
 local ImageLabel_4 = Instance.new("ImageLabel")
 local TextButton_5 = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local POUT = Instance.new("Frame")
 local ImageLabel_5 = Instance.new("ImageLabel")
 local TextButton_6 = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
 local FSBO = Instance.new("Frame")
 local ImageLabel_6 = Instance.new("ImageLabel")
 local TextButton_7 = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 local PCM = Instance.new("Frame")
 local TextLabel_7 = Instance.new("TextLabel")
 local Min = Instance.new("Frame")
@@ -64,23 +63,29 @@ local TextLabel_8 = Instance.new("TextLabel")
 local GSB = Instance.new("Frame")
 local ImageLabel_7 = Instance.new("ImageLabel")
 local TextButton_8 = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local GST = Instance.new("Frame")
 local ImageLabel_8 = Instance.new("ImageLabel")
 local TextButton_9 = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local MBB = Instance.new("Frame")
 local ImageLabel_9 = Instance.new("ImageLabel")
 local TextButton_10 = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local BaBa = Instance.new("Frame")
 local ImageLabel_10 = Instance.new("ImageLabel")
 local TextButton_11 = Instance.new("TextButton")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local MK32 = Instance.new("Frame")
 local ImageLabel_11 = Instance.new("ImageLabel")
 local TextButton_12 = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local Login = Instance.new("Frame")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextBox_2 = Instance.new("TextBox")
+local TextButton_13 = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 
 --Properties:
 
@@ -150,6 +155,7 @@ Frame.Size = UDim2.new(0, 28, 0, 26)
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 162, 0)
 TextLabel.BackgroundTransparency = 0.750
+TextLabel.Rotation = 1.000
 TextLabel.Size = UDim2.new(0, 28, 0, 26)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "VIP"
@@ -160,21 +166,18 @@ TextLabel.TextWrapped = true
 
 UICorner_4.Parent = TextLabel
 
-Profile.Name = "Profile"
-Profile.Parent = Repositories
-Profile.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Profile.BackgroundTransparency = 0.800
-Profile.Position = UDim2.new(0.82421875, 0, 0.178796679, 0)
-Profile.Size = UDim2.new(0, 80, 0, 26)
-Profile.Font = Enum.Font.SourceSansBold
-Profile.Text = "Profile"
-Profile.TextColor3 = Color3.fromRGB(255, 255, 255)
-Profile.TextSize = 22.000
+VIP.Name = "VIP"
+VIP.Parent = Repositories
+VIP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+VIP.BackgroundTransparency = 0.800
+VIP.Position = UDim2.new(0.82421875, 0, 0.178796679, 0)
+VIP.Size = UDim2.new(0, 80, 0, 26)
+VIP.Font = Enum.Font.SourceSansBold
+VIP.Text = "VIP"
+VIP.TextColor3 = Color3.fromRGB(255, 255, 255)
+VIP.TextSize = 22.000
 
-UICorner_5.Parent = Profile
-
-UICorner_6.CornerRadius = UDim.new(0, 18)
-UICorner_6.Parent = FrameM
+UICorner_5.Parent = VIP
 
 Close.Name = "Close"
 Close.Parent = FrameM
@@ -186,8 +189,8 @@ Close.Text = "X"
 Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextSize = 35.000
 
-UICorner_7.CornerRadius = UDim.new(0, 18)
-UICorner_7.Parent = Close
+UICorner_6.CornerRadius = UDim.new(0, 18)
+UICorner_6.Parent = Close
 
 Frame_2.Parent = FrameM
 Frame_2.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
@@ -385,8 +388,8 @@ TextButton_3.Text = "Wear"
 TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_3.TextSize = 24.000
 
-UICorner_8.CornerRadius = UDim.new(0, 18)
-UICorner_8.Parent = TextButton_3
+UICorner_7.CornerRadius = UDim.new(0, 18)
+UICorner_7.Parent = TextButton_3
 
 Neck.Name = "Neck"
 Neck.Parent = OUTFIT
@@ -413,8 +416,8 @@ TextButton_4.Text = "Wear"
 TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_4.TextSize = 24.000
 
-UICorner_9.CornerRadius = UDim.new(0, 18)
-UICorner_9.Parent = TextButton_4
+UICorner_8.CornerRadius = UDim.new(0, 18)
+UICorner_8.Parent = TextButton_4
 
 Glasses.Name = "Glasses"
 Glasses.Parent = OUTFIT
@@ -441,8 +444,8 @@ TextButton_5.Text = "Wear"
 TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_5.TextSize = 24.000
 
-UICorner_10.CornerRadius = UDim.new(0, 18)
-UICorner_10.Parent = TextButton_5
+UICorner_9.CornerRadius = UDim.new(0, 18)
+UICorner_9.Parent = TextButton_5
 
 POUT.Name = "POUT"
 POUT.Parent = OUTFIT
@@ -469,8 +472,8 @@ TextButton_6.Text = "Wear"
 TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_6.TextSize = 24.000
 
-UICorner_11.CornerRadius = UDim.new(0, 18)
-UICorner_11.Parent = TextButton_6
+UICorner_10.CornerRadius = UDim.new(0, 18)
+UICorner_10.Parent = TextButton_6
 
 FSBO.Name = "FSBO"
 FSBO.Parent = OUTFIT
@@ -497,8 +500,8 @@ TextButton_7.Text = "Wear"
 TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_7.TextSize = 24.000
 
-UICorner_12.CornerRadius = UDim.new(0, 18)
-UICorner_12.Parent = TextButton_7
+UICorner_11.CornerRadius = UDim.new(0, 18)
+UICorner_11.Parent = TextButton_7
 
 PCM.Name = "PCM"
 PCM.Parent = OUTFIT
@@ -562,8 +565,8 @@ TextButton_8.Text = "Wear"
 TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_8.TextSize = 24.000
 
-UICorner_13.CornerRadius = UDim.new(0, 18)
-UICorner_13.Parent = TextButton_8
+UICorner_12.CornerRadius = UDim.new(0, 18)
+UICorner_12.Parent = TextButton_8
 
 GST.Name = "GST"
 GST.Parent = OUTFIT
@@ -590,8 +593,8 @@ TextButton_9.Text = "Wear"
 TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_9.TextSize = 24.000
 
-UICorner_14.CornerRadius = UDim.new(0, 18)
-UICorner_14.Parent = TextButton_9
+UICorner_13.CornerRadius = UDim.new(0, 18)
+UICorner_13.Parent = TextButton_9
 
 MBB.Name = "MBB"
 MBB.Parent = OUTFIT
@@ -618,8 +621,8 @@ TextButton_10.Text = "Wear"
 TextButton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_10.TextSize = 24.000
 
-UICorner_15.CornerRadius = UDim.new(0, 18)
-UICorner_15.Parent = TextButton_10
+UICorner_14.CornerRadius = UDim.new(0, 18)
+UICorner_14.Parent = TextButton_10
 
 BaBa.Name = "BaBa"
 BaBa.Parent = OUTFIT
@@ -646,8 +649,8 @@ TextButton_11.Text = "Wear"
 TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_11.TextSize = 24.000
 
-UICorner_16.CornerRadius = UDim.new(0, 18)
-UICorner_16.Parent = TextButton_11
+UICorner_15.CornerRadius = UDim.new(0, 18)
+UICorner_15.Parent = TextButton_11
 
 MK32.Name = "MK32"
 MK32.Parent = OUTFIT
@@ -674,12 +677,60 @@ TextButton_12.Text = "Wear"
 TextButton_12.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_12.TextSize = 24.000
 
+UICorner_16.CornerRadius = UDim.new(0, 18)
+UICorner_16.Parent = TextButton_12
+
+Login.Name = "Login"
+Login.Parent = FrameM
+Login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Login.BackgroundTransparency = 1.000
+Login.Position = UDim2.new(0, 0, 0.103773586, 0)
+Login.Size = UDim2.new(0, 512, 0, 243)
+Login.Visible = false
+
+TextLabel_9.Parent = Login
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.248046875, 0, 0.119341567, 0)
+TextLabel_9.Size = UDim2.new(0, 257, 0, 50)
+TextLabel_9.Font = Enum.Font.SourceSansBold
+TextLabel_9.Text = "Activate vip code"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 36.000
+
+TextBox_2.Parent = Login
+TextBox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.BackgroundTransparency = 0.450
+TextBox_2.BorderSizePixel = 0
+TextBox_2.Position = UDim2.new(0.140625, 0, 0.325102895, 0)
+TextBox_2.Size = UDim2.new(0, 368, 0, 50)
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.PlaceholderColor3 = Color3.fromRGB(118, 118, 118)
+TextBox_2.PlaceholderText = "Code Here"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.TextSize = 14.000
+TextBox_2.TextWrapped = true
+
+TextButton_13.Parent = Login
+TextButton_13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_13.BackgroundTransparency = 0.600
+TextButton_13.Position = UDim2.new(0.3046875, 0, 0.559670806, 0)
+TextButton_13.Size = UDim2.new(0, 200, 0, 50)
+TextButton_13.Font = Enum.Font.SourceSansBold
+TextButton_13.Text = "Activate"
+TextButton_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_13.TextSize = 22.000
+
 UICorner_17.CornerRadius = UDim.new(0, 18)
-UICorner_17.Parent = TextButton_12
+UICorner_17.Parent = TextButton_13
+
+UICorner_18.CornerRadius = UDim.new(0, 18)
+UICorner_18.Parent = FrameM
 
 -- Scripts:
 
-local function DNTICL_fake_script() -- Home.LocalScript 
+local function WCLF_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -687,10 +738,11 @@ local function DNTICL_fake_script() -- Home.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Home.Visible = true
 		script.Parent.Parent.Parent.Parent.FrameM.OUTFIT.Visible = false
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
+		script.Parent.Parent.Parent.Parent.FrameM.Login.Visible = false
 	end)
 end
-coroutine.wrap(DNTICL_fake_script)()
-local function XNINMIE_fake_script() -- Player.LocalScript 
+coroutine.wrap(WCLF_fake_script)()
+local function VTKYE_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -698,39 +750,98 @@ local function XNINMIE_fake_script() -- Player.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Home.Visible = false
 		script.Parent.Parent.Parent.Parent.FrameM.OUTFIT.Visible = false
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
+		script.Parent.Parent.Parent.Parent.FrameM.Login.Visible = false
 	end)
 end
-coroutine.wrap(XNINMIE_fake_script)()
-local function JGPZPHB_fake_script() -- Outfit.LocalScript 
+coroutine.wrap(VTKYE_fake_script)()
+local function QFTZD_fake_script() -- Outfit.LocalScript 
 	local script = Instance.new('LocalScript', Outfit)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent.FrameM.MAIN.Visible = false
-		script.Parent.Parent.Parent.Parent.FrameM.Home.Visible = false
-		script.Parent.Parent.Parent.Parent.FrameM.OUTFIT.Visible = true
-		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
+		if script.UICorner.Value == true then
+			script.Parent.Parent.Parent.Parent.FrameM.MAIN.Visible = false
+			script.Parent.Parent.Parent.Parent.FrameM.Home.Visible = false
+			script.Parent.Parent.Parent.Parent.FrameM.OUTFIT.Visible = true
+			script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
+			script.Parent.Parent.Parent.Parent.FrameM.Login.Visible = false
+		else
+			for i = 1,10 do
+				wait(0.001)
+				script.Parent.Frame.TextLabel.Rotation = script.Parent.Frame.TextLabel.Rotation - 4
+			end
+			for i = 1,20 do
+				wait(0.001)
+				script.Parent.Frame.TextLabel.Rotation = script.Parent.Frame.TextLabel.Rotation + 20
+			end
+		end
 	end)
 end
-coroutine.wrap(JGPZPHB_fake_script)()
-local function UFGW_fake_script() -- Profile.LocalScript 
-	local script = Instance.new('LocalScript', Profile)
+coroutine.wrap(QFTZD_fake_script)()
+local function NGIAYO_fake_script() -- TextLabel.RGB_Script 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	-- Made By Auradomix --
+	-- Visit My Channel On YT and Twitch = @Auradomix
+	
+	-- PUT "RGB_GUI" ON STARTERGUI
+	-- PUT THIS ON ANY FRAME OR BUTTON OR BOX OR ...
+	-- ONLY ADAPTED FOR GUI, Please Referance To my Other Model For Brick
+	
+	-- Local Script = Client
+	-- Script = Server
+	
+	-- For more fast Server Put them as a Local Scrpit for Gui
+	
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
+		for i = 0,255,10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(255/255,i/255,0/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(i/255,255/255,0/255)
+		end
+		for i = 0,255,10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(0/255,255/255,i/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(0/255,i/255,255/255)
+		end
+		for i = 0,255,10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(i/255,0/255,255/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(255/255,0/255,i/255)
+		end
+	end
+end
+coroutine.wrap(NGIAYO_fake_script)()
+local function MFMXVFC_fake_script() -- VIP.LocalScript 
+	local script = Instance.new('LocalScript', VIP)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent.FrameM.MAIN.Visible = true
+		script.Parent.Parent.Parent.Parent.FrameM.MAIN.Visible = false
+		script.Parent.Parent.Parent.Parent.FrameM.OUTFIT.Visible = false
+		script.Parent.Parent.Parent.Parent.FrameM.Login.Visible = true
 		script.Parent.Parent.Parent.Parent.FrameM.Home.Visible = false
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
 	end)
 end
-coroutine.wrap(UFGW_fake_script)()
-local function ZCHQQIC_fake_script() -- Close.LocalScript 
+coroutine.wrap(MFMXVFC_fake_script)()
+local function NHTO_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Remove()
 	end)
 end
-coroutine.wrap(ZCHQQIC_fake_script)()
-local function QSKK_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(NHTO_fake_script)()
+local function QXKF_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local test = nil
@@ -775,8 +886,8 @@ local function QSKK_fake_script() -- TextButton.LocalScript
 		---------------------------------------------------
 	end)
 end
-coroutine.wrap(QSKK_fake_script)()
-local function HAZZAJQ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(QXKF_fake_script)()
+local function LWXPJK_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local A_1 = nil
@@ -803,8 +914,8 @@ local function HAZZAJQ_fake_script() -- TextButton_2.LocalScript
 		end
 	end
 end
-coroutine.wrap(HAZZAJQ_fake_script)()
-local function LSDIFWP_fake_script() -- FrameM.LocalScript 
+coroutine.wrap(LWXPJK_fake_script)()
+local function RHGROOL_fake_script() -- FrameM.LocalScript 
 	local script = Instance.new('LocalScript', FrameM)
 
 	frame = script.Parent
@@ -812,8 +923,8 @@ local function LSDIFWP_fake_script() -- FrameM.LocalScript
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(LSDIFWP_fake_script)()
-local function AEXLW_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(RHGROOL_fake_script)()
+local function VUEPR_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local A_1 = "wear"
@@ -826,8 +937,8 @@ local function AEXLW_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(AEXLW_fake_script)()
-local function WWJX_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(VUEPR_fake_script)()
+local function NSRPC_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local A_1 = "wear"
@@ -840,8 +951,8 @@ local function WWJX_fake_script() -- TextButton_4.LocalScript
 	end)
 	
 end
-coroutine.wrap(WWJX_fake_script)()
-local function AZUOK_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(NSRPC_fake_script)()
+local function MJSFJTH_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local A_1 = "wear"
@@ -854,8 +965,8 @@ local function AZUOK_fake_script() -- TextButton_5.LocalScript
 	end)
 	
 end
-coroutine.wrap(AZUOK_fake_script)()
-local function YNSIJUY_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(MJSFJTH_fake_script)()
+local function CNLIT_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	local A_1 = "outfit"
@@ -869,8 +980,8 @@ local function YNSIJUY_fake_script() -- TextButton_6.LocalScript
 		Event:FireServer(A_1, A_2, A_3)
 	end)
 end
-coroutine.wrap(YNSIJUY_fake_script)()
-local function TLEKYH_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(CNLIT_fake_script)()
+local function RISQ_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	local A_1 = "outfit"
@@ -884,8 +995,8 @@ local function TLEKYH_fake_script() -- TextButton_7.LocalScript
 		Event:FireServer(A_1, A_2, A_3)
 	end)
 end
-coroutine.wrap(TLEKYH_fake_script)()
-local function EQMRH_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(RISQ_fake_script)()
+local function MNLZ_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	local A_1 = "outfit"
@@ -899,8 +1010,8 @@ local function EQMRH_fake_script() -- TextButton_8.LocalScript
 		Event:FireServer(A_1, A_2, A_3)
 	end)
 end
-coroutine.wrap(EQMRH_fake_script)()
-local function JHPQP_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(MNLZ_fake_script)()
+local function VGYDEWZ_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	local A_1 = "outfit"
@@ -914,8 +1025,8 @@ local function JHPQP_fake_script() -- TextButton_9.LocalScript
 		Event:FireServer(A_1, A_2, A_3)
 	end)
 end
-coroutine.wrap(JHPQP_fake_script)()
-local function APVL_fake_script() -- TextButton_10.LocalScript 
+coroutine.wrap(VGYDEWZ_fake_script)()
+local function ZGEEX_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
 
 	local A_1 = "wear"
@@ -928,8 +1039,8 @@ local function APVL_fake_script() -- TextButton_10.LocalScript
 	end)
 	
 end
-coroutine.wrap(APVL_fake_script)()
-local function ZWVAEJ_fake_script() -- TextButton_11.LocalScript 
+coroutine.wrap(ZGEEX_fake_script)()
+local function XFJJFT_fake_script() -- TextButton_11.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_11)
 
 	local A_1 = "wear"
@@ -942,8 +1053,8 @@ local function ZWVAEJ_fake_script() -- TextButton_11.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZWVAEJ_fake_script)()
-local function ZVSVQ_fake_script() -- TextButton_12.LocalScript 
+coroutine.wrap(XFJJFT_fake_script)()
+local function QLOXHD_fake_script() -- TextButton_12.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_12)
 
 	local A_1 = "wear"
@@ -956,4 +1067,22 @@ local function ZVSVQ_fake_script() -- TextButton_12.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZVSVQ_fake_script)()
+coroutine.wrap(QLOXHD_fake_script)()
+local function DGDZDG_fake_script() -- TextButton_13.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_13)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.TextBox.Text == "2022VIPACTIVATIONCODE_HPPYNY" then
+			script.Parent.Parent.Parent.Repositories.Outfit.LocalScript.UICorner.Value = true
+			script.Parent.Parent.TextBox.BackgroundColor3 = Color3.fromRGB(0,255,0)
+			wait(1)
+			script.Parent.Parent.TextBox.BackgroundColor3 = Color3.fromRGB(255,255,255)
+		else
+			script.Parent.Parent.TextBox.Text = ""
+			script.Parent.Parent.TextBox.BackgroundColor3 = Color3.fromRGB(255,0,0)
+			wait(1)
+			script.Parent.Parent.TextBox.BackgroundColor3 = Color3.fromRGB(255,255,255)
+		end
+	end)
+end
+coroutine.wrap(DGDZDG_fake_script)()
