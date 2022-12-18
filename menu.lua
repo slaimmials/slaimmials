@@ -10,25 +10,53 @@ local Home = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local Player = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
+local Outfit = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local Close = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
 local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local Profile = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
 local MAIN = Instance.new("ScrollingFrame")
 local TPTO = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
 local SPAM = Instance.new("Frame")
 local TextButton_2 = Instance.new("TextButton")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextBox = Instance.new("TextBox")
 local TextLabel_3 = Instance.new("TextLabel")
-local Home_2 = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
 local TextLabel_4 = Instance.new("TextLabel")
-local ImageLabel = Instance.new("ImageLabel")
+local Home_2 = Instance.new("Frame")
 local TextLabel_5 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_6 = Instance.new("TextLabel")
 local Start = Instance.new("TextLabel")
+local OUTFIT = Instance.new("ScrollingFrame")
+local HeadPhones = Instance.new("Frame")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Neck = Instance.new("Frame")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Glasses = Instance.new("Frame")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local POUT = Instance.new("Frame")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local TextButton_6 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local FSBO = Instance.new("Frame")
+local ImageLabel_6 = Instance.new("ImageLabel")
+local TextButton_7 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
 
 --Properties:
 
@@ -76,8 +104,53 @@ Player.TextSize = 25.000
 
 UICorner_2.Parent = Player
 
-UICorner_3.CornerRadius = UDim.new(0, 18)
-UICorner_3.Parent = FrameM
+Outfit.Name = "Outfit"
+Outfit.Parent = Repositories
+Outfit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Outfit.BackgroundTransparency = 0.800
+Outfit.Position = UDim2.new(0.55859375, 0, 0.178796053, 0)
+Outfit.Size = UDim2.new(0, 116, 0, 26)
+Outfit.ZIndex = 4
+Outfit.Font = Enum.Font.SourceSansBold
+Outfit.Text = "Outfit"
+Outfit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Outfit.TextSize = 25.000
+
+UICorner_3.Parent = Outfit
+
+Frame.Parent = Outfit
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Size = UDim2.new(0, 28, 0, 26)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 162, 0)
+TextLabel.BackgroundTransparency = 0.750
+TextLabel.Size = UDim2.new(0, 28, 0, 26)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "VIP"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_4.Parent = TextLabel
+
+Profile.Name = "Profile"
+Profile.Parent = Repositories
+Profile.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Profile.BackgroundTransparency = 0.800
+Profile.Position = UDim2.new(0.82421875, 0, 0.178796679, 0)
+Profile.Size = UDim2.new(0, 80, 0, 26)
+Profile.Font = Enum.Font.SourceSansBold
+Profile.Text = "Profile"
+Profile.TextColor3 = Color3.fromRGB(255, 255, 255)
+Profile.TextSize = 22.000
+
+UICorner_5.Parent = Profile
+
+UICorner_6.CornerRadius = UDim.new(0, 18)
+UICorner_6.Parent = FrameM
 
 Close.Name = "Close"
 Close.Parent = FrameM
@@ -89,14 +162,14 @@ Close.Text = "X"
 Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextSize = 35.000
 
-UICorner_4.CornerRadius = UDim.new(0, 18)
-UICorner_4.Parent = Close
+UICorner_7.CornerRadius = UDim.new(0, 18)
+UICorner_7.Parent = Close
 
-Frame.Parent = FrameM
-Frame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0, 0, 0.101578616, 0)
-Frame.Size = UDim2.new(0, 512, 0, 4)
+Frame_2.Parent = FrameM
+Frame_2.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.101578616, 0)
+Frame_2.Size = UDim2.new(0, 512, 0, 4)
 
 MAIN.Name = "MAIN"
 MAIN.Parent = FrameM
@@ -138,16 +211,16 @@ ScrollingFrame.CanvasPosition = Vector2.new(0, 150)
 ScrollingFrame.CanvasSize = UDim2.new(0, 0, 20, 0)
 ScrollingFrame.ScrollBarThickness = 7
 
-TextLabel.Parent = TPTO
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.0262008738, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 292, 0, 25)
-TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "Teleport To"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 14.000
-TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_2.Parent = TPTO
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0262008738, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 292, 0, 25)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Teleport To"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 
 SPAM.Name = "SPAM"
 SPAM.Parent = MAIN
@@ -168,16 +241,16 @@ TextButton_2.Text = "Spam [OFF]"
 TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.TextSize = 14.000
 
-TextLabel_2.Parent = SPAM
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.0262008738, 0, 0, 0)
-TextLabel_2.Size = UDim2.new(0, 292, 0, 25)
-TextLabel_2.Font = Enum.Font.SourceSansBold
-TextLabel_2.Text = "Spam messages"
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_3.Parent = SPAM
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0262008738, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 292, 0, 25)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Spam messages"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
 
 TextBox.Parent = SPAM
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -189,16 +262,16 @@ TextBox.Text = ""
 TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.TextSize = 14.000
 
-TextLabel_3.Parent = FrameM
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.029296875, 0, 0, 0)
-TextLabel_3.Size = UDim2.new(0, 445, 0, 32)
-TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "BrookHack"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 22.000
-TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_4.Parent = FrameM
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.029296875, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 445, 0, 32)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "BrookHack"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 22.000
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
 
 Home_2.Name = "Home"
 Home_2.Parent = FrameM
@@ -208,16 +281,16 @@ Home_2.Position = UDim2.new(0, 0, 0.113207549, 0)
 Home_2.Size = UDim2.new(0, 512, 0, 240)
 Home_2.Visible = false
 
-TextLabel_4.Parent = Home_2
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(0.359375, 0, 0.075000003, 0)
-TextLabel_4.Size = UDim2.new(0, 164, 0, 17)
-TextLabel_4.Font = Enum.Font.SourceSansBold
-TextLabel_4.Text = "BrookHaven Hack"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 24.000
-TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_5.Parent = Home_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.359375, 0, 0.075000003, 0)
+TextLabel_5.Size = UDim2.new(0, 164, 0, 17)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "BrookHaven Hack"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 24.000
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
 
 ImageLabel.Parent = Home_2
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -226,18 +299,18 @@ ImageLabel.Position = UDim2.new(0.041015625, 0, 0.0785377473, 0)
 ImageLabel.Size = UDim2.new(0, 150, 0, 150)
 ImageLabel.Image = "http://www.roblox.com/asset/?id=11847532498"
 
-TextLabel_5.Parent = Home_2
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(0.359375, 0, 0.191666663, 0)
-TextLabel_5.Size = UDim2.new(0, 276, 0, 122)
-TextLabel_5.Font = Enum.Font.SourceSans
-TextLabel_5.Text = "HackGui created by slaimmials and D3LTAREX                            thanks for using my scripts"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextSize = 24.000
-TextLabel_5.TextWrapped = true
-TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
-TextLabel_5.TextYAlignment = Enum.TextYAlignment.Top
+TextLabel_6.Parent = Home_2
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.359375, 0, 0.191666663, 0)
+TextLabel_6.Size = UDim2.new(0, 276, 0, 122)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "HackGui created by slaimmials and D3LTAREX                            thanks for using my scripts"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 24.000
+TextLabel_6.TextWrapped = true
+TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_6.TextYAlignment = Enum.TextYAlignment.Top
 
 Start.Name = "Start"
 Start.Parent = FrameM
@@ -251,20 +324,194 @@ Start.TextColor3 = Color3.fromRGB(255, 255, 255)
 Start.TextSize = 33.000
 Start.TextWrapped = true
 
+OUTFIT.Name = "OUTFIT"
+OUTFIT.Parent = FrameM
+OUTFIT.Active = true
+OUTFIT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OUTFIT.BackgroundTransparency = 1.000
+OUTFIT.BorderColor3 = Color3.fromRGB(255, 0, 0)
+OUTFIT.BorderSizePixel = 0
+OUTFIT.Position = UDim2.new(0, 0, 0.114157237, 0)
+OUTFIT.Size = UDim2.new(0, 512, 0, 239)
+OUTFIT.Visible = false
+
+HeadPhones.Name = "HeadPhones"
+HeadPhones.Parent = OUTFIT
+HeadPhones.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+HeadPhones.BackgroundTransparency = 0.450
+HeadPhones.BorderSizePixel = 0
+HeadPhones.Position = UDim2.new(0.029296875, 0, 0.0235450119, 0)
+HeadPhones.Size = UDim2.new(0, 225, 0, 55)
+
+ImageLabel_2.Parent = HeadPhones
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0.112729885, 0, 0.145454541, 0)
+ImageLabel_2.Size = UDim2.new(0, 44, 0, 38)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=11848383066"
+
+TextButton_3.Parent = HeadPhones
+TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BackgroundTransparency = 0.700
+TextButton_3.Position = UDim2.new(0.488004923, 0, 0.109090909, 0)
+TextButton_3.Size = UDim2.new(0, 107, 0, 42)
+TextButton_3.Font = Enum.Font.SourceSansBold
+TextButton_3.Text = "Wear"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 24.000
+
+UICorner_8.CornerRadius = UDim.new(0, 18)
+UICorner_8.Parent = TextButton_3
+
+Neck.Name = "Neck"
+Neck.Parent = OUTFIT
+Neck.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+Neck.BackgroundTransparency = 0.450
+Neck.BorderSizePixel = 0
+Neck.Position = UDim2.new(0.5234375, 0, 0.0233472213, 0)
+Neck.Size = UDim2.new(0, 211, 0, 55)
+
+ImageLabel_3.Parent = Neck
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.Position = UDim2.new(0.0897483081, 0, 0.145454541, 0)
+ImageLabel_3.Size = UDim2.new(0, 44, 0, 38)
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id=11848389683"
+
+TextButton_4.Parent = Neck
+TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BackgroundTransparency = 0.700
+TextButton_4.Position = UDim2.new(0.424442649, 0, 0.145454541, 0)
+TextButton_4.Size = UDim2.new(0, 107, 0, 42)
+TextButton_4.Font = Enum.Font.SourceSansBold
+TextButton_4.Text = "Wear"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 24.000
+
+UICorner_9.CornerRadius = UDim.new(0, 18)
+UICorner_9.Parent = TextButton_4
+
+Glasses.Name = "Glasses"
+Glasses.Parent = OUTFIT
+Glasses.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+Glasses.BackgroundTransparency = 0.450
+Glasses.BorderSizePixel = 0
+Glasses.Position = UDim2.new(0.029296875, 0, 0.149443656, 0)
+Glasses.Size = UDim2.new(0, 225, 0, 55)
+
+ImageLabel_4.Parent = Glasses
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.Position = UDim2.new(0.0193965659, 0, 0.145454541, 0)
+ImageLabel_4.Size = UDim2.new(0, 86, 0, 38)
+ImageLabel_4.Image = "http://www.roblox.com/asset/?id=11848391428"
+
+TextButton_5.Parent = Glasses
+TextButton_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BackgroundTransparency = 0.700
+TextButton_5.Position = UDim2.new(0.488004893, 0, 0.109090909, 0)
+TextButton_5.Size = UDim2.new(0, 107, 0, 42)
+TextButton_5.Font = Enum.Font.SourceSansBold
+TextButton_5.Text = "Wear"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextSize = 24.000
+
+UICorner_10.CornerRadius = UDim.new(0, 18)
+UICorner_10.Parent = TextButton_5
+
+POUT.Name = "POUT"
+POUT.Parent = OUTFIT
+POUT.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+POUT.BackgroundTransparency = 0.450
+POUT.BorderSizePixel = 0
+POUT.Position = UDim2.new(0.5234375, 0, 0.149133384, 0)
+POUT.Size = UDim2.new(0, 211, 0, 55)
+
+ImageLabel_5.Parent = POUT
+ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_5.BackgroundTransparency = 1.000
+ImageLabel_5.Position = UDim2.new(0.0944876298, 0, 0.0217695758, 0)
+ImageLabel_5.Size = UDim2.new(0, 43, 0, 53)
+ImageLabel_5.Image = "http://www.roblox.com/asset/?id=11848393875"
+
+TextButton_6.Parent = POUT
+TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.BackgroundTransparency = 0.700
+TextButton_6.Position = UDim2.new(0.424442649, 0, 0.145454541, 0)
+TextButton_6.Size = UDim2.new(0, 107, 0, 42)
+TextButton_6.Font = Enum.Font.SourceSansBold
+TextButton_6.Text = "Wear"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.TextSize = 24.000
+
+UICorner_11.CornerRadius = UDim.new(0, 18)
+UICorner_11.Parent = TextButton_6
+
+FSBO.Name = "FSBO"
+FSBO.Parent = OUTFIT
+FSBO.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+FSBO.BackgroundTransparency = 0.450
+FSBO.BorderSizePixel = 0
+FSBO.Position = UDim2.new(0.029296875, 0, 0.275229812, 0)
+FSBO.Size = UDim2.new(0, 225, 0, 55)
+
+ImageLabel_6.Parent = FSBO
+ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_6.BackgroundTransparency = 1.000
+ImageLabel_6.Position = UDim2.new(0.1127299, 0, 0, 0)
+ImageLabel_6.Size = UDim2.new(0, 44, 0, 54)
+ImageLabel_6.Image = "http://www.roblox.com/asset/?id=11848395072"
+
+TextButton_7.Parent = FSBO
+TextButton_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.BackgroundTransparency = 0.700
+TextButton_7.Position = UDim2.new(0.488004893, 0, 0.109090909, 0)
+TextButton_7.Size = UDim2.new(0, 107, 0, 42)
+TextButton_7.Font = Enum.Font.SourceSansBold
+TextButton_7.Text = "Wear"
+TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.TextSize = 24.000
+
+UICorner_12.CornerRadius = UDim.new(0, 18)
+UICorner_12.Parent = TextButton_7
+
 -- Scripts:
 
-local function GSRIIUW_fake_script() -- Home.LocalScript 
+local function DULEYXS_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.FrameM.MAIN.Visible = false
 		script.Parent.Parent.Parent.Parent.FrameM.Home.Visible = true
+		script.Parent.Parent.Parent.Parent.FrameM.OUTFIT.Visible = false
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
 	end)
 end
-coroutine.wrap(GSRIIUW_fake_script)()
-local function MTBM_fake_script() -- Player.LocalScript 
+coroutine.wrap(DULEYXS_fake_script)()
+local function EJUNV_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.FrameM.MAIN.Visible = true
+		script.Parent.Parent.Parent.Parent.FrameM.Home.Visible = false
+		script.Parent.Parent.Parent.Parent.FrameM.OUTFIT.Visible = false
+		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
+	end)
+end
+coroutine.wrap(EJUNV_fake_script)()
+local function CZOYFJB_fake_script() -- Outfit.LocalScript 
+	local script = Instance.new('LocalScript', Outfit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.FrameM.MAIN.Visible = false
+		script.Parent.Parent.Parent.Parent.FrameM.Home.Visible = false
+		script.Parent.Parent.Parent.Parent.FrameM.OUTFIT.Visible = true
+		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
+	end)
+end
+coroutine.wrap(CZOYFJB_fake_script)()
+local function HMQY_fake_script() -- Profile.LocalScript 
+	local script = Instance.new('LocalScript', Profile)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.FrameM.MAIN.Visible = true
@@ -272,16 +519,16 @@ local function MTBM_fake_script() -- Player.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
 	end)
 end
-coroutine.wrap(MTBM_fake_script)()
-local function BFLAKNR_fake_script() -- Close.LocalScript 
+coroutine.wrap(HMQY_fake_script)()
+local function JSTVGNG_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Remove()
 	end)
 end
-coroutine.wrap(BFLAKNR_fake_script)()
-local function HKFNRV_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(JSTVGNG_fake_script)()
+local function SWTR_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local test = nil
@@ -326,8 +573,8 @@ local function HKFNRV_fake_script() -- TextButton.LocalScript
 		---------------------------------------------------
 	end)
 end
-coroutine.wrap(HKFNRV_fake_script)()
-local function NFHIQ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(SWTR_fake_script)()
+local function MMTJCGS_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local A_1 = nil
@@ -354,8 +601,8 @@ local function NFHIQ_fake_script() -- TextButton_2.LocalScript
 		end
 	end
 end
-coroutine.wrap(NFHIQ_fake_script)()
-local function KFSBGJ_fake_script() -- FrameM.LocalScript 
+coroutine.wrap(MMTJCGS_fake_script)()
+local function QQYFW_fake_script() -- FrameM.LocalScript 
 	local script = Instance.new('LocalScript', FrameM)
 
 	frame = script.Parent
@@ -363,4 +610,76 @@ local function KFSBGJ_fake_script() -- FrameM.LocalScript
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(KFSBGJ_fake_script)()
+coroutine.wrap(QQYFW_fake_script)()
+local function TWFBWN_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local A_1 = "wear"
+	local A_2 = nil
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		A_2 = 7969960859
+		Event:FireServer(A_1, A_2)
+	end)
+	
+end
+coroutine.wrap(TWFBWN_fake_script)()
+local function MLLUI_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local A_1 = "wear"
+	local A_2 = nil
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		A_2 = 5802829986
+		Event:FireServer(A_1, A_2)
+	end)
+	
+end
+coroutine.wrap(MLLUI_fake_script)()
+local function AWRBTP_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local A_1 = "wear"
+	local A_2 = nil
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		A_2 = 6380262775
+		Event:FireServer(A_1, A_2)
+	end)
+	
+end
+coroutine.wrap(AWRBTP_fake_script)()
+local function KDBSJQ_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	local A_1 = "outfit"
+	local A_2 = nil
+	local A_3 = nil
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		A_2 = "9938141001"
+		A_3 = "9938141001"
+		Event:FireServer(A_1, A_2, A_3)
+	end)
+end
+coroutine.wrap(KDBSJQ_fake_script)()
+local function TZBNNCF_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	local A_1 = "outfit"
+	local A_2 = nil
+	local A_3 = nil
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		A_2 = "3024364251"
+		A_3 = "3024364251"
+		Event:FireServer(A_1, A_2, A_3)
+	end)
+end
+coroutine.wrap(TZBNNCF_fake_script)()
