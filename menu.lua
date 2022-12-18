@@ -1114,7 +1114,7 @@ local function bypass_fix() -- TextButton_13.LocalScript
         		end
         	end
         	if OUTFIT.Visible == true then
-        		if Outfit.Num.Value >= 1 or Outfit.Num.Value <= 1 then
+        		if Outfit.Num.Value == 0 then
         			game.Players.LocalPlayer:Kick("Try to bypass")
         		end
         	end
