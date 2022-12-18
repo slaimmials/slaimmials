@@ -87,6 +87,12 @@ local TextButton_13 = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
 local UICorner_18 = Instance.new("UICorner")
 local Num = Instance.new("NumberValue")
+local WC = Instance.new("Frame")
+local WCTL = Instance.new("TextLabel")
+local WCTB = Instance.new("TextBox")
+local WCB = Instance.new("TextButton")
+local WCF = Instance.new("Frame")
+local WCLTL = Instance.new("TextLabel")
 
 --Properties:
 
@@ -731,6 +737,72 @@ UICorner_18.Parent = FrameM
 
 Num.Parent = Outfit
 Num.Name = "Num"
+
+WC.Name = "WC"
+WC.Parent = MAIN
+WC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WC.BackgroundTransparency = 0.650
+WC.BorderSizePixel = 0
+WC.Position = UDim2.new(0.041015625, 0, 0.399227709, 0)
+WC.Size = UDim2.new(0, 458, 0, 73)
+
+WCTL.Name = "WCTL"
+WCTL.Parent = WC
+WCTL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WCTL.BackgroundTransparency = 1.000
+WCTL.Position = UDim2.new(0.0262008738, 0, 0.0273972601, 0)
+WCTL.Size = UDim2.new(0, 292, 0, 25)
+WCTL.Font = Enum.Font.SourceSansBold
+WCTL.Text = "Wear Cloth"
+WCTL.TextColor3 = Color3.fromRGB(0, 0, 0)
+WCTL.TextSize = 14.000
+WCTL.TextXAlignment = Enum.TextXAlignment.Left
+
+WCTB.Name = "WCTB"
+WCTB.Parent = WC
+WCTB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WCTB.BorderSizePixel = 0
+WCTB.Position = UDim2.new(0.0262008738, 0, 0.38159585, 0)
+WCTB.Selectable = false
+WCTB.Size = UDim2.new(0, 329, 0, 33)
+WCTB.Font = Enum.Font.SourceSans
+WCTB.Text = ""
+WCTB.TextColor3 = Color3.fromRGB(0, 0, 0)
+WCTB.TextSize = 14.000
+
+WCB.Name = "WCB"
+WCB.Parent = WC
+WCB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WCB.BackgroundTransparency = 0.600
+WCB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WCB.Position = UDim2.new(0.790392995, 0, 0.417731315, 0)
+WCB.Size = UDim2.new(0, 83, 0, 27)
+WCB.ZIndex = -888
+WCB.Font = Enum.Font.SourceSansBold
+WCB.Text = "Wear"
+WCB.TextColor3 = Color3.fromRGB(0, 0, 0)
+WCB.TextSize = 14.000
+
+WCF.Name = "WCF"
+WCF.Parent = WC
+WCF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WCF.BackgroundTransparency = 0.600
+WCF.Size = UDim2.new(0, 458, 0, 73)
+WCF.ZIndex = 2
+
+WCLTL.Name = "WCLTL"
+WCLTL.Parent = WCF
+WCLTL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WCLTL.BackgroundTransparency = 1.000
+WCLTL.BorderSizePixel = 0
+WCLTL.Position = UDim2.new(0.165938869, 0, 0.246575356, 0)
+WCLTL.Size = UDim2.new(0, 200, 0, 50)
+WCLTL.ZIndex = 3
+WCLTL.Font = Enum.Font.SourceSansBold
+WCLTL.Text = "Vip users only!"
+WCLTL.TextColor3 = Color3.fromRGB(0, 0, 0)
+WCLTL.TextSize = 36.000
+
 -- Scripts:
 
 local function TIUMDDD_fake_script() -- Home.LocalScript 
@@ -1099,7 +1171,7 @@ local function bypass_fix() -- TextButton_13.LocalScript
 	local na = game.Players.LocalPlayer
 	
     while wait(0.01) do
-        if na.Name ~= "Slaimmials2" or na.Name ~= "agent_379" then
+        if na.Name ~= "Slaimmials2" and na.Name ~= "agent_379" then
             for i,v in pairs(game.CoreGui:GetDescendants()) do
             	for i,b in pairs(v:GetDescendants()) do
             		if b.Name == "SideMenu" then
@@ -1122,6 +1194,78 @@ local function bypass_fix() -- TextButton_13.LocalScript
     end
 end
 coroutine.wrap(bypass_fix)()
+
+local function DQBEKW_fake_script() -- WCB.LocalScript 
+	local script = Instance.new('LocalScript', WCB)
+
+	local A_1 = nil
+	local A_2 = nil
+	local A_3 = nil
+	local Event = nil
+	
+	
+	local cc = 0
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+    	A_1 = "wear"
+    	A_2 = script.Parent.Parent.WCTB.Text
+    	Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+    	Event:FireServer(A_1, A_2)
+    	A_1 = "outfit"
+    	A_2 = script.Parent.Parent.WCTB.Text
+    	A_3 = script.Parent.Parent.WCTB.Text
+    	Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
+    	Event:FireServer(A_1, A_2, A_3)
+	end)
+end
+coroutine.wrap(DQBEKW_fake_script)()
+local function MFYDTH_fake_script() -- WCF.RGB_Script 
+	local script = Instance.new('LocalScript', WCF)
+
+	while wait() do
+		script.Parent.BackgroundColor3 = Color3.new(255/255,0/255,0/255)
+		for i = 0,255,10 do
+			wait()
+			script.Parent.BackgroundColor3 = Color3.new(255/255,i/255,0/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.BackgroundColor3 = Color3.new(i/255,255/255,0/255)
+		end
+		for i = 0,255,10 do
+			wait()
+			script.Parent.BackgroundColor3 = Color3.new(0/255,255/255,i/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.BackgroundColor3 = Color3.new(0/255,i/255,255/255)
+		end
+		for i = 0,255,10 do
+			wait()
+			script.Parent.BackgroundColor3 = Color3.new(i/255,0/255,255/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.BackgroundColor3 = Color3.new(255/255,0/255,i/255)
+		end
+	end
+end
+coroutine.wrap(MFYDTH_fake_script)()
+local function ICKI_fake_script() -- WC.LocalScript 
+	local script = Instance.new('LocalScript', WC)
+
+	local nam = script.Parent.Parent.Parent.Repositories.Outfit.Num
+	
+	while wait(0.01) do
+		if nam.Value == 1 then
+			script.Parent.WCF:Remove()
+			script.Parent.WCTB.TextEditable = true
+		end
+	end
+end
+coroutine.wrap(ICKI_fake_script)()
+
 
 --[[
 while wait(0.001) do
