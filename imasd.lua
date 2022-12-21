@@ -1,1 +1,1 @@
-game.Players.LocalPlayer.Character.Humanoid:Kick()
+game.Players.LocalPlayer:Kick()
