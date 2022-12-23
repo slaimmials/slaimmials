@@ -766,7 +766,7 @@ WCTB.Parent = WC
 WCTB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 WCTB.BorderSizePixel = 0
 WCTB.Position = UDim2.new(0.0262008738, 0, 0.38159585, 0)
-WCTB.Selectable = false
+WCTB.TextEditable = false
 WCTB.Size = UDim2.new(0, 329, 0, 33)
 WCTB.Font = Enum.Font.SourceSans
 WCTB.Text = ""
@@ -1018,7 +1018,7 @@ local function JCFCKOQ_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 
-	while wait(3.5) do
+	while wait(2.3) do
 		if cc == 1 then
 			A_1 = script.Parent.Parent.TextBox.Text
 			Event:FireServer(A_1, A_2)
