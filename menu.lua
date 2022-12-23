@@ -93,6 +93,9 @@ local WCTB = Instance.new("TextBox")
 local WCB = Instance.new("TextButton")
 local WCF = Instance.new("Frame")
 local WCLTL = Instance.new("TextLabel")
+local VISUAL = Instance.new("Frame")
+local ESP = Instance.new("TextButton")
+local TextLabelESP = Instance.new("TextLabel")
 
 --Properties:
 
@@ -803,6 +806,37 @@ WCLTL.Text = "Vip users only!"
 WCLTL.TextColor3 = Color3.fromRGB(0, 0, 0)
 WCLTL.TextSize = 36.000
 
+VISUAL.Name = "VISUAL"
+VISUAL.Parent = MAIN
+VISUAL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VISUAL.BackgroundTransparency = 0.650
+VISUAL.BorderSizePixel = 0
+VISUAL.Position = UDim2.new(0.041015625, 0, 0.54088366, 0)
+VISUAL.Size = UDim2.new(0, 122, 0, 67)
+
+ESP.Name = "ESP"
+ESP.Parent = VISUAL
+ESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESP.BackgroundTransparency = 0.600
+ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESP.Position = UDim2.new(0.157348365, 0, 0.373134345, 0)
+ESP.Size = UDim2.new(0, 83, 0, 27)
+ESP.Font = Enum.Font.SourceSansBold
+ESP.Text = "Esp [OFF]"
+ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESP.TextSize = 14.000
+
+TextLabelESP.Name = "TextLabelESP"
+TextLabelESP.Parent = VISUAL
+TextLabelESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabelESP.BackgroundTransparency = 1.000
+TextLabelESP.Position = UDim2.new(0.157348379, 0, 0, 0)
+TextLabelESP.Size = UDim2.new(0, 83, 0, 25)
+TextLabelESP.Font = Enum.Font.SourceSansBold
+TextLabelESP.Text = "Visuals"
+TextLabelESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabelESP.TextSize = 14.000
+
 -- Scripts:
 
 local function TIUMDDD_fake_script() -- Home.LocalScript 
@@ -831,7 +865,7 @@ end
 coroutine.wrap(TYNX_fake_script)()
 local function MYDZ_fake_script() -- Outfit.LocalScript 
 	local script = Instance.new('LocalScript', Outfit)
-	
+
 	local nim = script.Parent.Num
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1147,9 +1181,9 @@ end
 coroutine.wrap(BNYKVX_fake_script)()
 local function ZKXZ_fake_script() -- TextButton_13.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_13)
-	
+
 	local tbb = script.Parent.Parent.TextBox
-	
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if tbb.Text == "li6F6G6LWZSiwdh1cYMFsnscDSa6uQFQmMFkT717" then
 			script.Parent.Parent.Parent.Repositories.Outfit.Num.Value = 1
@@ -1167,31 +1201,31 @@ end
 coroutine.wrap(ZKXZ_fake_script)()
 local function bypass_fix() -- TextButton_13.LocalScript 
 	local script = Instance.new('LocalScript', BH)
-	
+
 	local na = game.Players.LocalPlayer
-	
-    while wait(0.01) do
-        if na.Name ~= "Slaimmials2" and na.Name ~= "agent_379" then
-            for i,v in pairs(game.CoreGui:GetDescendants()) do
-            	for i,b in pairs(v:GetDescendants()) do
-            		if b.Name == "SideMenu" then
-            			for i,n in pairs(b:GetDescendants()) do
-            				if n.Name == "Title" then
-            					if n.Text == "DEX" then
-            						game.Players.LocalPlayer:Kick("DarkDex Detected!")
-            					end
-            				end
-            			end
-            		end
-        		end
-        	end
-        	if OUTFIT.Visible == true then
-        		if Outfit.Num.Value == 0 then
-        			game.Players.LocalPlayer:Kick("Try to bypass")
-        		end
-        	end
-        end
-    end
+
+	while wait(0.01) do
+		if na.Name ~= "Slaimmials2" and na.Name ~= "agent_379" then
+			for i,v in pairs(game.CoreGui:GetDescendants()) do
+				for i,b in pairs(v:GetDescendants()) do
+					if b.Name == "SideMenu" then
+						for i,n in pairs(b:GetDescendants()) do
+							if n.Name == "Title" then
+								if n.Text == "DEX" then
+									game.Players.LocalPlayer:Kick("DarkDex Detected!")
+								end
+							end
+						end
+					end
+				end
+			end
+			if OUTFIT.Visible == true then
+				if Outfit.Num.Value == 0 then
+					game.Players.LocalPlayer:Kick("Try to bypass")
+				end
+			end
+		end
+	end
 end
 coroutine.wrap(bypass_fix)()
 
@@ -1202,21 +1236,21 @@ local function DQBEKW_fake_script() -- WCB.LocalScript
 	local A_2 = nil
 	local A_3 = nil
 	local Event = nil
-	
-	
+
+
 	local cc = 0
-	
-	
+
+
 	script.Parent.MouseButton1Click:Connect(function()
-    	A_1 = "wear"
-    	A_2 = script.Parent.Parent.WCTB.Text
-    	Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
-    	Event:FireServer(A_1, A_2)
-    	A_1 = "outfit"
-    	A_2 = script.Parent.Parent.WCTB.Text
-    	A_3 = script.Parent.Parent.WCTB.Text
-    	Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
-    	Event:FireServer(A_1, A_2, A_3)
+		A_1 = "wear"
+		A_2 = script.Parent.Parent.WCTB.Text
+		Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+		Event:FireServer(A_1, A_2)
+		A_1 = "outfit"
+		A_2 = script.Parent.Parent.WCTB.Text
+		A_3 = script.Parent.Parent.WCTB.Text
+		Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
+		Event:FireServer(A_1, A_2, A_3)
 	end)
 end
 coroutine.wrap(DQBEKW_fake_script)()
@@ -1256,7 +1290,7 @@ local function ICKI_fake_script() -- WC.LocalScript
 	local script = Instance.new('LocalScript', WC)
 
 	local nam = script.Parent.Parent.Parent.Repositories.Outfit.Num
-	
+
 	while wait(0.01) do
 		if nam.Value == 1 then
 			script.Parent.WCF:Remove()
@@ -1266,6 +1300,58 @@ local function ICKI_fake_script() -- WC.LocalScript
 end
 coroutine.wrap(ICKI_fake_script)()
 
+local function BFYGUB_fake_script() -- ESP.LocalScriptESP 
+	local script = Instance.new('LocalScript', ESP)
+
+	local cch = 0
+	local esp = nil
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if cch == 0 then
+			cch = 1
+			script.Parent.Text = "Esp [ON]"
+			for i,v in pairs(game.Players:GetDescendants()) do
+				if v.ClassName == "Player" then
+					--if not workspace[v.Name].Highlight then
+					esp = Instance.new("Highlight", v.Character)
+					esp = nil
+					--end
+				end	
+			end
+		elseif cch == 1 then
+			cch = 0
+			script.Parent.Text = "Esp [OFF]"
+			for i,v in pairs(workspace:GetDescendants()) do
+				print(v.Name)
+				if v.Name == "Highlight" then
+					v:Remove()
+				end
+			end
+		end
+	end)
+	--[[
+	while wait(0.4) do
+		if cch == 1 then
+			for i,v in pairs(game.Players:GetDescendants()) do
+				if v.ClassName == "Player" then
+					--if not workspace[v.Name].Highlight then
+					esp = Instance.new("Highlight", v.Character)
+					esp = nil
+					--end
+				end	
+			end
+		elseif cch == 0 then
+			for i,v in pairs(workspace:GetDescendants()) do
+				print(v.Name)
+				if v.Name == "Highlight" then
+					v:Remove()
+				end
+			end
+		end
+	end
+	--]]
+end
+coroutine.wrap(BFYGUB_fake_script)()
 
 --[[
 while wait(0.001) do
