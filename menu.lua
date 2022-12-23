@@ -1305,6 +1305,8 @@ local function BFYGUB_fake_script() -- ESP.LocalScriptESP
 
 	local cch = 0
 	local esp = nil
+	local billboardesp = nil
+	local textlabelesp = nil
 
 	script.Parent.MouseButton1Click:Connect(function()
 		if cch == 0 then
@@ -1316,6 +1318,20 @@ local function BFYGUB_fake_script() -- ESP.LocalScriptESP
 					esp = Instance.new("Highlight", v.Character)
 					esp = nil
 					--end
+					billboardesp = Instance.new("BillboardGui", v.Character.Head)
+					billboardesp.Adornee = v.Character.Head
+					billboardesp.AlwaysOnTop = true
+					billboardesp.Size = UDim2.new(0, 200, 0, 50)
+					billboardesp.StudsOffset = Vector3.new(0, 2, 0)
+					
+					textlabelesp = Instance.new("TextLabel", billboardesp)
+					textlabelesp.BackgroundTransparency = 1
+					textlabelesp.Size = UDim2.new(0, 200, 0, 50)
+					textlabelesp.Text = v.Name
+					textlabelesp.TextColor3 = Color3.fromRGB(255, 255, 255)
+					textlabelesp.TextSize = 22
+					textlabelesp = nil
+					billboardesp = nil
 				end	
 			end
 		elseif cch == 1 then
@@ -1323,7 +1339,7 @@ local function BFYGUB_fake_script() -- ESP.LocalScriptESP
 			script.Parent.Text = "Esp [OFF]"
 			for i,v in pairs(workspace:GetDescendants()) do
 				print(v.Name)
-				if v.Name == "Highlight" then
+				if v.Name == "Highlight" or v.Name == "BillboardGui" then
 					v:Remove()
 				end
 			end
