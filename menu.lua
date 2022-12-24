@@ -1112,6 +1112,11 @@ local function NCPHIP_fake_script() -- TextButton_3.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 7969960859
 		Event:FireServer(A_1, A_2)
+		local mess = Instance.new("Hint", workspace)
+		mess.Text = "Weared!"
+		wait(2.5)
+		mess:Remove()
+		mess = nil
 	end)
 
 end
@@ -1126,6 +1131,11 @@ local function DWKTO_fake_script() -- TextButton_4.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 5802829986
 		Event:FireServer(A_1, A_2)
+		local mess = Instance.new("Hint", workspace)
+		mess.Text = "Weared!"
+		wait(2.5)
+		mess:Remove()
+		mess = nil
 	end)
 
 end
@@ -1140,6 +1150,11 @@ local function YURKKN_fake_script() -- TextButton_5.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 6380262775
 		Event:FireServer(A_1, A_2)
+		local mess = Instance.new("Hint", workspace)
+		mess.Text = "Weared!"
+		wait(2.5)
+		mess:Remove()
+		mess = nil
 	end)
 
 end
@@ -1156,6 +1171,11 @@ local function SNDK_fake_script() -- TextButton_6.LocalScript
 		A_2 = "9938141001"
 		A_3 = "9938141001"
 		Event:FireServer(A_1, A_2, A_3)
+		local mess = Instance.new("Hint", workspace)
+		mess.Text = "Weared!"
+		wait(2.5)
+		mess:Remove()
+		mess = nil
 	end)
 end
 coroutine.wrap(SNDK_fake_script)()
@@ -1171,6 +1191,11 @@ local function IOPTZ_fake_script() -- TextButton_7.LocalScript
 		A_2 = "3024364251"
 		A_3 = "3024364251"
 		Event:FireServer(A_1, A_2, A_3)
+		local mess = Instance.new("Hint", workspace)
+		mess.Text = "Weared!"
+		wait(2.5)
+		mess:Remove()
+		mess = nil
 	end)
 end
 coroutine.wrap(IOPTZ_fake_script)()
@@ -1186,6 +1211,11 @@ local function UVTDXW_fake_script() -- TextButton_8.LocalScript
 		A_2 = "11300550181"
 		A_3 = "11300550181"
 		Event:FireServer(A_1, A_2, A_3)
+		local mess = Instance.new("Hint", workspace)
+		mess.Text = "Weared!"
+		wait(2.5)
+		mess:Remove()
+		mess = nil
 	end)
 end
 coroutine.wrap(UVTDXW_fake_script)()
@@ -1201,6 +1231,11 @@ local function TBRGSS_fake_script() -- TextButton_9.LocalScript
 		A_2 = "11300547179"
 		A_3 = "11300547179"
 		Event:FireServer(A_1, A_2, A_3)
+		local mess = Instance.new("Hint", workspace)
+		mess.Text = "Weared!"
+		wait(2.5)
+		mess:Remove()
+		mess = nil
 	end)
 end
 coroutine.wrap(TBRGSS_fake_script)()
@@ -1214,6 +1249,11 @@ local function FVLSFY_fake_script() -- TextButton_10.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 10552317835
 		Event:FireServer(A_1, A_2)
+		local mess = Instance.new("Hint", workspace)
+		mess.Text = "Weared!"
+		wait(2.5)
+		mess:Remove()
+		mess = nil
 	end)
 
 end
@@ -1228,6 +1268,11 @@ local function BJIVD_fake_script() -- TextButton_11.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 8526714465
 		Event:FireServer(A_1, A_2)
+		local mess = Instance.new("Hint", workspace)
+		mess.Text = "Weared!"
+		wait(2.5)
+		mess:Remove()
+		mess = nil
 	end)
 
 end
@@ -1242,6 +1287,11 @@ local function BNYKVX_fake_script() -- TextButton_12.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 10977196907
 		Event:FireServer(A_1, A_2)
+		local mess = Instance.new("Hint", workspace)
+		mess.Text = "Weared!"
+		wait(2.5)
+		mess:Remove()
+		mess = nil
 	end)
 
 end
@@ -1254,6 +1304,11 @@ local function ZKXZ_fake_script() -- TextButton_13.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		if tbb.Text == "li6F6G6LWZSiwdh1cYMFsnscDSa6uQFQmMFkT717" then
 			script.Parent.Parent.Parent.Repositories.Outfit.Num.Value = 1
+			local mess = Instance.new("Hint", workspace)
+			mess.Text = "VIP CODE ACTIVATED! Thx for buying)"
+			wait(2.5)
+			mess:Remove()
+			mess = nil
 			tbb.BackgroundColor3 = Color3.fromRGB(0,255,0)
 			wait(1)
 			tbb.BackgroundColor3 = Color3.fromRGB(255,255,255)
@@ -1318,6 +1373,11 @@ local function DQBEKW_fake_script() -- WCB.LocalScript
 		A_3 = script.Parent.Parent.WCTB.Text
 		Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
 		Event:FireServer(A_1, A_2, A_3)
+		local mess = Instance.new("Hint", workspace)
+		mess.Text = "Not working("
+		wait(2.5)
+		mess:Remove()
+		mess = nil
 	end)
 end
 coroutine.wrap(DQBEKW_fake_script)()
