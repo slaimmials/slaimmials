@@ -1,1 +1,1 @@
-game:GetService("Players").Slaimmials2.PlayerGui.ScreenGui.UpdatesScroll.TextLabel.Text = "[+] Fixed ESP lag"
+game:GetService("Players").LocalPlayer.PlayerGui.BH.UpdatesScroll.TextLabelUPD.Text = "[+] Fixed ESP lag"
