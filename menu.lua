@@ -106,6 +106,7 @@ local UICornerButtonUPD = Instance.new("UICorner")
 
 BH.Name = "BH"
 BH.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BH.ResetOnSpawn = false
 BH.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 FrameM.Name = "FrameM"
