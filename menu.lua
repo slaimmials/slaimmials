@@ -855,10 +855,11 @@ UpdatesScroll.Size = UDim2.new(0, 512, 0, 239)
 
 TextLabelUPD.Name = "TextLabelUPD"
 TextLabelUPD.Parent = UpdatesScroll
+TextLabelUPD.TextWrapped = true
 TextLabelUPD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabelUPD.BackgroundTransparency = 1.000
-TextLabelUPD.Position = UDim2.new(0.02734375, 0, 0.0108137131, 0)
-TextLabelUPD.Size = UDim2.new(0, 483, 0, 233)
+TextLabelUPD.Position = UDim2.new(0.029, 0, 0.022, 0)
+TextLabelUPD.Size = UDim2.new(0, 129, 0, 233)
 TextLabelUPD.Font = Enum.Font.SourceSansBold
 TextLabelUPD.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabelUPD.TextSize = 14.000
