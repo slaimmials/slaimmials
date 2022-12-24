@@ -1,1 +1,1 @@
-"test"
+script.Parent.Text = "test"
