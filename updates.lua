@@ -1,2 +1,1 @@
-game:GetService("Players").LocalPlayer.PlayerGui.BH.FrameM.UpdatesScroll.TextLabelUPD.Text = "[+] ESP Added
-[+] ESP lag fix"
+game:GetService("Players").LocalPlayer.PlayerGui.BH.FrameM.UpdatesScroll.TextLabelUPD.Text = "[+] ESP Added"
