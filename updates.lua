@@ -1,1 +1,1 @@
-game:GetService("Players").LocalPlayer.PlayerGui.BH.FrameM.UpdatesScroll.TextLabelUPD.Text = "[+] Update page Added                         [+] ESP Added                         [+] ESP lag fix                         [+] Hints Added"
+game:GetService("Players").LocalPlayer.PlayerGui.BH.FrameM.UpdatesScroll.TextLabelUPD.Text = "[+] Update page Added                         [+] ESP Added                         [+] ESP lag fix                         [+] Hints Added                         [+] Bugs patch"
