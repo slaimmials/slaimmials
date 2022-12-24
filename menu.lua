@@ -96,6 +96,11 @@ local WCLTL = Instance.new("TextLabel")
 local VISUAL = Instance.new("Frame")
 local ESP = Instance.new("TextButton")
 local TextLabelESP = Instance.new("TextLabel")
+local UpdatesScroll = Instance.new("ScrollingFrame")
+local TextLabelUPD = Instance.new("TextLabel")
+local Updates = Instance.new("TextButton")
+local UICornerButtonUPD = Instance.new("UICorner")
+
 
 --Properties:
 
@@ -355,7 +360,7 @@ Start.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Start.BackgroundTransparency = 1.000
 Start.Position = UDim2.new(0.083984375, 0, 0.254716992, 0)
 Start.Size = UDim2.new(0, 425, 0, 155)
-Start.Visible = false
+Start.Visible = true
 Start.Font = Enum.Font.SourceSansBold
 Start.Text = "Please select page"
 Start.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -693,6 +698,7 @@ UICorner_16.Parent = TextButton_12
 
 Login.Name = "Login"
 Login.Parent = FrameM
+Login.Visible = false
 Login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Login.BackgroundTransparency = 1.000
 Login.Position = UDim2.new(0, 0, 0.103773586, 0)
@@ -837,13 +843,72 @@ TextLabelESP.Text = "Visuals"
 TextLabelESP.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabelESP.TextSize = 14.000
 
+UpdatesScroll.Name = "UpdatesScroll"
+UpdatesScroll.Parent = FrameM
+UpdatesScroll.Visible = false
+UpdatesScroll.Active = true
+UpdatesScroll.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+UpdatesScroll.BackgroundTransparency = 1.000
+UpdatesScroll.BorderSizePixel = 0
+UpdatesScroll.Position = UDim2.new(0, 0, 0.114157237, 0)
+UpdatesScroll.Size = UDim2.new(0, 512, 0, 239)
+
+TextLabelUPD.Name = "TextLabelUPD"
+TextLabelUPD.Parent = UpdatesScroll
+TextLabelUPD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabelUPD.BackgroundTransparency = 1.000
+TextLabelUPD.Position = UDim2.new(0.02734375, 0, 0.0108137131, 0)
+TextLabelUPD.Size = UDim2.new(0, 483, 0, 233)
+TextLabelUPD.Font = Enum.Font.SourceSansBold
+TextLabelUPD.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabelUPD.TextSize = 14.000
+TextLabelUPD.TextXAlignment = Enum.TextXAlignment.Left
+TextLabelUPD.TextYAlignment = Enum.TextYAlignment.Top
+
+Updates.Name = "Updates"
+Updates.Parent = FrameM
+Updates.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+Updates.Position = UDim2.new(0.74609375, 0, 0.0125786178, 0)
+Updates.Size = UDim2.new(0, 84, 0, 26)
+Updates.Font = Enum.Font.SourceSansBold
+Updates.Text = "Updates"
+Updates.TextColor3 = Color3.fromRGB(255, 255, 255)
+Updates.TextSize = 25.000
+
+UICornerButtonUPD.Name = "UICornerButtonUPD"
+UICornerButtonUPD.Parent = Updates
+
 -- Scripts:
+
+local function FTEI_fake_script() -- Updates.LocalScript 
+	local script = Instance.new('LocalScript', Updates)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Login.Visible = false
+		script.Parent.Parent.Start.Visible = false
+		script.Parent.Parent.Home.Visible = false
+		script.Parent.Parent.MAIN.Visible = false
+		script.Parent.Parent.OUTFIT.Visible = false
+		script.Parent.Parent.UpdatesScroll.Visible = true
+	end)
+end
+coroutine.wrap(FTEI_fake_script)()
+
+local function QJQG_fake_script() -- TextLabelUPD.LocalScript 
+	local script = Instance.new('LocalScript', TextLabelUPD)
+
+	while wait(0.1) do
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/slaimmials/slaimmials/main/updates.lua"))()
+	end
+end
+coroutine.wrap(QJQG_fake_script)()
 
 local function TIUMDDD_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.FrameM.MAIN.Visible = false
+		script.Parent.Parent.Parent.Parent.FrameM.UpdatesScroll.Visible = false
 		script.Parent.Parent.Parent.Parent.FrameM.Home.Visible = true
 		script.Parent.Parent.Parent.Parent.FrameM.OUTFIT.Visible = false
 		script.Parent.Parent.Parent.Parent.FrameM.Start.Visible = false
@@ -855,6 +920,7 @@ local function TYNX_fake_script() -- Player.LocalScript
 	local script = Instance.new('LocalScript', Player)
 
 	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.FrameM.UpdatesScroll.Visible = false
 		script.Parent.Parent.Parent.Parent.FrameM.MAIN.Visible = true
 		script.Parent.Parent.Parent.Parent.FrameM.Home.Visible = false
 		script.Parent.Parent.Parent.Parent.FrameM.OUTFIT.Visible = false
@@ -870,6 +936,7 @@ local function MYDZ_fake_script() -- Outfit.LocalScript
 
 	script.Parent.MouseButton1Click:Connect(function()
 		if nim.Value == 1 then
+			script.Parent.Parent.Parent.Parent.FrameM.UpdatesScroll.Visible = false
 			script.Parent.Parent.Parent.Parent.FrameM.MAIN.Visible = false
 			script.Parent.Parent.Parent.Parent.FrameM.Home.Visible = false
 			script.Parent.Parent.Parent.Parent.FrameM.OUTFIT.Visible = true
@@ -1337,11 +1404,11 @@ local function BFYGUB_fake_script() -- ESP.LocalScriptESP
 		elseif cch == 1 then
 			cch = 0
 			script.Parent.Text = "Esp [OFF]"
-			for i,v in pairs(workspace:GetDescendants()) do
-				print(v.Name)
-				if v.Name == "Highlight" or v.Name == "BillboardGui" then
-					v:Remove()
-				end
+			for i,v in pairs(game.Players:GetDescendants()) do
+				if v.ClassName == "Player" then
+					v.Character.Highlight:Remove()
+					v.Character.Head.BillboardGui:Remove()
+				end	
 			end
 		end
 	end)
