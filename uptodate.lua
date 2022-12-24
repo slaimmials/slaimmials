@@ -1,1 +1,1 @@
-"asdasdzxczxc"
+print("asdasdzxczxc")
