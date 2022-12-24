@@ -1004,6 +1004,7 @@ local function UCRXMI_fake_script() -- VIP.LocalScript
 	local script = Instance.new('LocalScript', VIP)
 
 	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.FrameM.UpdatesScroll.Visible = false
 		script.Parent.Parent.Parent.Parent.FrameM.MAIN.Visible = false
 		script.Parent.Parent.Parent.Parent.FrameM.OUTFIT.Visible = false
 		script.Parent.Parent.Parent.Parent.FrameM.Login.Visible = true
