@@ -11,14 +11,6 @@ local UICorner = Instance.new("UICorner")
 local Player = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 local Outfit = Instance.new("TextButton")
----!
-local Login = Instance.new("Frame")
-local TextLabelLogin = Instance.new("TextLabel")
-local LoginTB = Instance.new("TextBox")
-local TextButtonLogin = Instance.new("TextButton")
-local UICornerlogin = Instance.new("UICorner")
-local LoginPassTB = Instance.new("TextBox")
----!
 local UICorner_3 = Instance.new("UICorner")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -88,11 +80,14 @@ local MK32 = Instance.new("Frame")
 local ImageLabel_11 = Instance.new("ImageLabel")
 local TextButton_12 = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
+
 local Login = Instance.new("Frame")
-local TextLabel_9 = Instance.new("TextLabel")
-local TextBox_2 = Instance.new("TextBox")
-local TextButton_13 = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
+local TextLabelLogin = Instance.new("TextLabel")
+local LoginTB = Instance.new("TextBox")
+local TextButtonLogin = Instance.new("TextButton")
+local UICornerlogin = Instance.new("UICorner")
+local LoginPassTB = Instance.new("TextBox")
+
 local UICorner_18 = Instance.new("UICorner")
 local Num = Instance.new("NumberValue")
 local WC = Instance.new("Frame")
@@ -707,12 +702,8 @@ UICorner_16.Parent = TextButton_12
 
 
 
--------!
-
-
-
 Login.Name = "Login"
-Login.Parent = game.StarterGui.BH.FrameM
+Login.Parent = FrameM
 Login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Login.BackgroundTransparency = 1.000
 Login.Position = UDim2.new(0, 0, 0.103773586, 0)
@@ -774,15 +765,10 @@ LoginPassTB.TextColor3 = Color3.fromRGB(0, 0, 0)
 LoginPassTB.TextSize = 14.000
 LoginPassTB.TextWrapped = true
 
-UICorner_17.CornerRadius = UDim.new(0, 18)
-UICorner_17.Parent = TextButton_13
+
 
 UICorner_18.CornerRadius = UDim.new(0, 18)
 UICorner_18.Parent = FrameM
-
-
------!
-
 
 Num.Parent = Outfit
 Num.Name = "Num"
@@ -1339,10 +1325,6 @@ local function BNYKVX_fake_script() -- TextButton_12.LocalScript
 end
 coroutine.wrap(BNYKVX_fake_script)()
 
-
-------!
-
-
 local function VFJS_fake_script() -- TextButtonLogin.LocalScript 
 	local script = Instance.new('LocalScript', TextButtonLogin)
 
@@ -1399,11 +1381,6 @@ local function VFJS_fake_script() -- TextButtonLogin.LocalScript
 end
 coroutine.wrap(VFJS_fake_script)()
 
-
-------!
-
-
-coroutine.wrap(ZKXZ_fake_script)()
 local function bypass_fix() -- TextButton_13.LocalScript 
 	local script = Instance.new('LocalScript', BH)
 
