@@ -11,6 +11,14 @@ local UICorner = Instance.new("UICorner")
 local Player = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 local Outfit = Instance.new("TextButton")
+---!
+local Login = Instance.new("Frame")
+local TextLabelLogin = Instance.new("TextLabel")
+local LoginTB = Instance.new("TextBox")
+local TextButtonLogin = Instance.new("TextButton")
+local UICornerlogin = Instance.new("UICorner")
+local LoginPassTB = Instance.new("TextBox")
+---!
 local UICorner_3 = Instance.new("UICorner")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -697,53 +705,84 @@ TextButton_12.TextSize = 24.000
 UICorner_16.CornerRadius = UDim.new(0, 18)
 UICorner_16.Parent = TextButton_12
 
+
+
+-------!
+
+
+
 Login.Name = "Login"
-Login.Parent = FrameM
-Login.Visible = false
+Login.Parent = game.StarterGui.BH.FrameM
 Login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Login.BackgroundTransparency = 1.000
 Login.Position = UDim2.new(0, 0, 0.103773586, 0)
-Login.Size = UDim2.new(0, 512, 0, 243)
+Login.Size = UDim2.new(1, 0, 0.764150918, 0)
 
-TextLabel_9.Parent = Login
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.Position = UDim2.new(0.248046875, 0, 0.119341567, 0)
-TextLabel_9.Size = UDim2.new(0, 257, 0, 50)
-TextLabel_9.Font = Enum.Font.SourceSansBold
-TextLabel_9.Text = "Activate vip code"
-TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.TextSize = 36.000
+TextLabelLogin.Name = "TextLabelLogin"
+TextLabelLogin.Parent = Login
+TextLabelLogin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabelLogin.BackgroundTransparency = 1.000
+TextLabelLogin.Position = UDim2.new(0.404296875, 0, 0.0987654477, 0)
+TextLabelLogin.Size = UDim2.new(0.19140625, 0, 0.14403291, 0)
+TextLabelLogin.Font = Enum.Font.SourceSansBold
+TextLabelLogin.Text = "Sign in"
+TextLabelLogin.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabelLogin.TextSize = 36.000
 
-TextBox_2.Parent = Login
-TextBox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox_2.BackgroundTransparency = 0.450
-TextBox_2.BorderSizePixel = 0
-TextBox_2.Position = UDim2.new(0.140625, 0, 0.325102895, 0)
-TextBox_2.Size = UDim2.new(0, 368, 0, 50)
-TextBox_2.Font = Enum.Font.SourceSans
-TextBox_2.PlaceholderColor3 = Color3.fromRGB(118, 118, 118)
-TextBox_2.PlaceholderText = "Code Here"
-TextBox_2.Text = ""
-TextBox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextBox_2.TextSize = 14.000
-TextBox_2.TextWrapped = true
+LoginTB.Name = "LoginTB"
+LoginTB.Parent = Login
+LoginTB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginTB.BackgroundTransparency = 0.450
+LoginTB.BorderSizePixel = 0
+LoginTB.Position = UDim2.new(0.326171875, 0, 0.283950627, 0)
+LoginTB.Size = UDim2.new(0.34765625, 0, 0.152263373, 0)
+LoginTB.Font = Enum.Font.SourceSansBold
+LoginTB.PlaceholderColor3 = Color3.fromRGB(118, 118, 118)
+LoginTB.PlaceholderText = "Login"
+LoginTB.Text = ""
+LoginTB.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoginTB.TextSize = 14.000
+LoginTB.TextWrapped = true
 
-TextButton_13.Parent = Login
-TextButton_13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_13.BackgroundTransparency = 0.600
-TextButton_13.Position = UDim2.new(0.3046875, 0, 0.559670806, 0)
-TextButton_13.Size = UDim2.new(0, 200, 0, 50)
-TextButton_13.Font = Enum.Font.SourceSansBold
-TextButton_13.Text = "Activate"
-TextButton_13.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_13.TextSize = 22.000
+TextButtonLogin.Name = "TextButtonLogin"
+TextButtonLogin.Parent = Login
+TextButtonLogin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButtonLogin.BackgroundTransparency = 0.600
+TextButtonLogin.Position = UDim2.new(0.3046875, 0, 0.683127582, 0)
+TextButtonLogin.Size = UDim2.new(0.390625, 0, 0.205761313, 0)
+TextButtonLogin.Font = Enum.Font.SourceSansBold
+TextButtonLogin.Text = "Activate"
+TextButtonLogin.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButtonLogin.TextSize = 22.000
+
+UICornerlogin.CornerRadius = UDim.new(0, 18)
+UICornerlogin.Name = "UICornerlogin"
+UICornerlogin.Parent = TextButtonLogin
+
+LoginPassTB.Name = "LoginPassTB"
+LoginPassTB.Parent = Login
+LoginPassTB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginPassTB.BackgroundTransparency = 0.450
+LoginPassTB.BorderSizePixel = 0
+LoginPassTB.Position = UDim2.new(0.326171875, 0, 0.473251045, 0)
+LoginPassTB.Size = UDim2.new(0.34765625, 0, 0.152263373, 0)
+LoginPassTB.Font = Enum.Font.SourceSansBold
+LoginPassTB.PlaceholderColor3 = Color3.fromRGB(118, 118, 118)
+LoginPassTB.PlaceholderText = "Password"
+LoginPassTB.Text = ""
+LoginPassTB.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoginPassTB.TextSize = 14.000
+LoginPassTB.TextWrapped = true
 
 UICorner_17.CornerRadius = UDim.new(0, 18)
 UICorner_17.Parent = TextButton_13
 
 UICorner_18.CornerRadius = UDim.new(0, 18)
 UICorner_18.Parent = FrameM
+
+
+-----!
+
 
 Num.Parent = Outfit
 Num.Name = "Num"
@@ -1299,30 +1338,71 @@ local function BNYKVX_fake_script() -- TextButton_12.LocalScript
 
 end
 coroutine.wrap(BNYKVX_fake_script)()
-local function ZKXZ_fake_script() -- TextButton_13.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_13)
 
-	local tbb = script.Parent.Parent.TextBox
 
+------!
+
+
+local function VFJS_fake_script() -- TextButtonLogin.LocalScript 
+	local script = Instance.new('LocalScript', TextButtonLogin)
+
+	local l1 = game:GetService("TestService").l1.Value
+	local p1 = game:GetService("TestService").l1.Value
+	
+	local l2 = game:GetService("TestService").l2.Value
+	local p2 = game:GetService("TestService").l2.Value
+	
+	local l3 = game:GetService("TestService").l3.Value
+	local p3 = game:GetService("TestService").l3.Value
+	
+	local l4 = game:GetService("TestService").l4.Value
+	local p4 = game:GetService("TestService").l4.Value
+	
+	local l5 = game:GetService("TestService").l5.Value
+	local p5 = game:GetService("TestService").l5.Value
+	
+	local l6 = game:GetService("TestService").l6.Value
+	local p6 = game:GetService("TestService").l6.Value
+	
+	local l7 = game:GetService("TestService").l7.Value
+	local p7 = game:GetService("TestService").l7.Value
+	
+	local l8 = game:GetService("TestService").l8.Value
+	local p8 = game:GetService("TestService").l8.Value
+	
+	local l9 = game:GetService("TestService").l9.Value
+	local p9 = game:GetService("TestService").l9.Value
+	
+	local l10 = game:GetService("TestService").l10.Value
+	local p10 = game:GetService("TestService").l10.Value
+	
+	local l = script.Parent.Parent.LoginTB
+	local p = script.Parent.Parent.LoginPassTB
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		if tbb.Text == "li6F6G6LWZSiwdh1cYMFsnscDSa6uQFQmMFkT717" then
+		if l.Text == l1 or l.Text == l2 or l.Text == l3 or l.Text == l4 or l.Text == l5 or l.Text == l6 or l.Text == l7 or l.Text == l8 or l.Text == l9 or l.Text == l10 and p.Text == p1 or p.Text == p2 or p.Text == p3 or p.Text == p4 or p.Text == p5 or p.Text == p6 or p.Text == p7 or p.Text == p8 or p.Text == p9 or p.Text == p10 then
 			script.Parent.Parent.Parent.Repositories.Outfit.Num.Value = 1
 			local mess = Instance.new("Hint", workspace)
 			mess.Text = "VIP CODE ACTIVATED! Thx for buying)"
-			wait(2.5)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+			wait(1)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,0,0)
+			wait(1.5)
 			mess:Remove()
 			mess = nil
-			tbb.BackgroundColor3 = Color3.fromRGB(0,255,0)
-			wait(1)
-			tbb.BackgroundColor3 = Color3.fromRGB(255,255,255)
 		else
-			tbb.Text = ""
-			tbb.BackgroundColor3 = Color3.fromRGB(255,0,0)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,0)
 			wait(1)
-			tbb.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,0,0)
 		end
 	end)
 end
+coroutine.wrap(VFJS_fake_script)()
+
+
+------!
+
+
 coroutine.wrap(ZKXZ_fake_script)()
 local function bypass_fix() -- TextButton_13.LocalScript 
 	local script = Instance.new('LocalScript', BH)
