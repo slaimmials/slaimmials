@@ -192,7 +192,7 @@ VIP.BackgroundTransparency = 0.800
 VIP.Position = UDim2.new(0.82421875, 0, 0.178796679, 0)
 VIP.Size = UDim2.new(0, 80, 0, 26)
 VIP.Font = Enum.Font.SourceSansBold
-VIP.Text = "VIP"
+VIP.Text = "Sign"
 VIP.TextColor3 = Color3.fromRGB(255, 255, 255)
 VIP.TextSize = 22.000
 
