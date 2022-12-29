@@ -1341,7 +1341,7 @@ local function YVBHH_fake_script() -- TextButtonLogin.LocalScript
 	local mess = nil
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/slaimmials/slaimmials/main/lAp.lua"))()
-		for i,v in pairs(game:GetService("TestService"):GetDescendants()) do
+		for i,v in pairs(game.TestService:GetDescendants()) do
 			if script.Parent.Parent.LoginPassTB.Text == v.Value then
 				pas = true
 				v:Remove()
