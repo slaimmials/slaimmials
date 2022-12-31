@@ -1,15 +1,6 @@
-local password = nil
-local login = nil
-login = Instance.new("StringValue", game:GetService("TestService"))
-login.Name = "l1"
-login.Value = "D3LTAREX"
---wait(1.2)
---login:Remove()
-login = nil
+local bool = nil
 
-password = Instance.new("StringValue", game:GetService("TestService"))
-password.Name = "p1"
-password.Value = "d3lTa13577531"
---wait(1.2)
---password:Remove()
-password = nil
+if game.Players.LocalPlayer.Name == "agent_379" or game.Players.LocalPlayer.Name == "Slaimmials2" then
+    bool = Instance.new("BoolValue", game.Players.LocalPlayer.Character)
+    bool.Value = true
+end
