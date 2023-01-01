@@ -1,4 +1,5 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/slaimmials/slaimmials/main/lAp.lua"))()
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -84,6 +85,9 @@ local Login = Instance.new("Frame")
 local TextLabelLogin = Instance.new("TextLabel")
 local TextButtonLogin = Instance.new("TextButton")
 local UICornerlogin = Instance.new("UICorner")
+local LoginName = Instance.new("TextBox")
+local LoginPassTB = Instance.new("TextBox")
+
 
 local UICorner_18 = Instance.new("UICorner")
 local Num = Instance.new("NumberValue")
@@ -700,7 +704,6 @@ UICorner_16.Parent = TextButton_12
 
 
 Login.Name = "Login"
-Login.Visible = false
 Login.Parent = FrameM
 Login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Login.BackgroundTransparency = 1.000
@@ -711,7 +714,7 @@ TextLabelLogin.Name = "TextLabelLogin"
 TextLabelLogin.Parent = Login
 TextLabelLogin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabelLogin.BackgroundTransparency = 1.000
-TextLabelLogin.Position = UDim2.new(0.404296875, 0, 0.267725855, 0)
+TextLabelLogin.Position = UDim2.new(0.404296875, 0, 0.152263403, 0)
 TextLabelLogin.Size = UDim2.new(0.19140625, 0, 0.14403291, 0)
 TextLabelLogin.Font = Enum.Font.SourceSansBold
 TextLabelLogin.Text = "Hi user!"
@@ -722,7 +725,7 @@ TextButtonLogin.Name = "TextButtonLogin"
 TextButtonLogin.Parent = Login
 TextButtonLogin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButtonLogin.BackgroundTransparency = 0.600
-TextButtonLogin.Position = UDim2.new(0.3046875, 0, 0.415098161, 0)
+TextButtonLogin.Position = UDim2.new(0.3046875, 0, 0.679012358, 0)
 TextButtonLogin.Size = UDim2.new(0.390625, 0, 0.205761313, 0)
 TextButtonLogin.Font = Enum.Font.SourceSansBold
 TextButtonLogin.Text = "Sign In"
@@ -732,6 +735,36 @@ TextButtonLogin.TextSize = 35.000
 UICornerlogin.CornerRadius = UDim.new(0, 18)
 UICornerlogin.Name = "UICornerlogin"
 UICornerlogin.Parent = TextButtonLogin
+
+LoginName.Name = "LoginName"
+LoginName.Parent = Login
+LoginName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginName.BackgroundTransparency = 0.450
+LoginName.BorderSizePixel = 0
+LoginName.Position = UDim2.new(0.326171875, 0, 0.320987672, 0)
+LoginName.Size = UDim2.new(0.34765625, 0, 0.152263373, 0)
+LoginName.Font = Enum.Font.SourceSansBold
+LoginName.PlaceholderColor3 = Color3.fromRGB(118, 118, 118)
+LoginName.PlaceholderText = "Password"
+LoginName.Text = ""
+LoginName.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoginName.TextSize = 14.000
+LoginName.TextWrapped = true
+
+LoginPassTB.Name = "LoginPassTB"
+LoginPassTB.Parent = Login
+LoginPassTB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginPassTB.BackgroundTransparency = 0.450
+LoginPassTB.BorderSizePixel = 0
+LoginPassTB.Position = UDim2.new(0.326171875, 0, 0.497942418, 0)
+LoginPassTB.Size = UDim2.new(0.34765625, 0, 0.152263373, 0)
+LoginPassTB.Font = Enum.Font.SourceSansBold
+LoginPassTB.PlaceholderColor3 = Color3.fromRGB(118, 118, 118)
+LoginPassTB.PlaceholderText = "Password"
+LoginPassTB.Text = ""
+LoginPassTB.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoginPassTB.TextSize = 14.000
+LoginPassTB.TextWrapped = true
 
 
 
@@ -952,6 +985,19 @@ end
 coroutine.wrap(MYDZ_fake_script)()
 local function GRET_fake_script() -- TextLabel.RGB_Script 
 	local script = Instance.new('LocalScript', TextLabel)
+
+	-- Made By Auradomix --
+	-- Visit My Channel On YT and Twitch = @Auradomix
+
+	-- PUT "RGB_GUI" ON STARTERGUI
+	-- PUT THIS ON ANY FRAME OR BUTTON OR BOX OR ...
+	-- ONLY ADAPTED FOR GUI, Please Referance To my Other Model For Brick
+
+	-- Local Script = Client
+	-- Script = Server
+
+	-- For more fast Server Put them as a Local Scrpit for Gui
+
 	while wait() do
 		script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
 		for i = 0,255,10 do
@@ -998,7 +1044,6 @@ local function LUSS_fake_script() -- Close.LocalScript
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.BHBuy:Remove()
 		script.Parent.Parent.Parent:Remove()
 	end)
 end
@@ -1281,26 +1326,46 @@ local function BNYKVX_fake_script() -- TextButton_12.LocalScript
 end
 coroutine.wrap(BNYKVX_fake_script)()
 
-local function EDZGOEC_fake_script() -- TextLabelLogin.LocalScript 
+local function WOONUHV_fake_script() -- TextLabelLogin.LocalScript 
 	local script = Instance.new('LocalScript', TextLabelLogin)
 
 	local me = game.Players.LocalPlayer
 	script.Parent.Text = "Hi " .. me.Name .. "!"
-	
 end
-coroutine.wrap(EDZGOEC_fake_script)()
-local function TZVNWV_fake_script() -- TextButtonLogin.LocalScript 
+coroutine.wrap(WOONUHV_fake_script)()
+local function YVBHH_fake_script() -- TextButtonLogin.LocalScript 
 	local script = Instance.new('LocalScript', TextButtonLogin)
 
-	local lp = game.Players.LocalPlayer
-	
+	local unc = false
+	local pas = false
+	local mess = nil
 	script.Parent.MouseButton1Click:Connect(function()
-		if lp.Character.BHBuy.Value == true then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/slaimmials/slaimmials/main/lAp.lua"))()
+		for i,v in pairs(game.TestService:GetDescendants()) do
+			if script.Parent.Parent.LoginPassTB.Text == v.Value then
+				pas = true
+				v:Remove()
+			elseif script.Parent.Parent.LoginName.Text == v.Value then
+				unc = true
+				v:Remove()
+			else
+				v:Remove()
+			end
+		end
+		if pas == true and unc == true then
 			script.Parent.Parent.Parent.Repositories.Outfit.Num.Value = 1
+			mess = Instance.new("Hint", workspace)
+			mess.Text = "Succesfully signed in)"
+			wait(3)
+			mess:Remove()
+			mess = nil
+		else
+			script.Parent.Parent.LoginName.Text = ""
+			script.Parent.Parent.LoginPassTB.Text = ""
 		end
 	end)
 end
-coroutine.wrap(TZVNWV_fake_script)()
+coroutine.wrap(YVBHH_fake_script)()
 
 
 local function bypass_fix() -- TextButton_13.LocalScript 
