@@ -364,7 +364,7 @@ Start.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Start.BackgroundTransparency = 1.000
 Start.Position = UDim2.new(0.083984375, 0, 0.254716992, 0)
 Start.Size = UDim2.new(0, 425, 0, 155)
-Start.Visible = true
+Start.Visible = false
 Start.Font = Enum.Font.SourceSansBold
 Start.Text = "Please select page"
 Start.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -380,7 +380,7 @@ OUTFIT.BorderColor3 = Color3.fromRGB(255, 0, 0)
 OUTFIT.BorderSizePixel = 0
 OUTFIT.Position = UDim2.new(0, 0, 0.114157237, 0)
 OUTFIT.Size = UDim2.new(0, 512, 0, 239)
-OUTFIT.Visible = false
+OUTFIT.Visible = true
 OUTFIT.CanvasPosition = Vector2.new(0, 300)
 
 HeadPhones.Name = "HeadPhones"
@@ -703,6 +703,7 @@ UICorner_16.Parent = TextButton_12
 
 
 Login.Name = "Login"
+Login.Visible = false
 Login.Parent = FrameM
 Login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Login.BackgroundTransparency = 1.000
@@ -1135,7 +1136,7 @@ local function NCPHIP_fake_script() -- TextButton_3.LocalScript
 
 	local A_1 = "wear"
 	local A_2 = nil
-	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Updat7B7eAvata7B7r"]
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 7969960859
@@ -1154,7 +1155,7 @@ local function DWKTO_fake_script() -- TextButton_4.LocalScript
 
 	local A_1 = "wear"
 	local A_2 = nil
-	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Updat7B7eAvata7B7r"]
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 5802829986
@@ -1173,7 +1174,7 @@ local function YURKKN_fake_script() -- TextButton_5.LocalScript
 
 	local A_1 = "wear"
 	local A_2 = nil
-	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Updat7B7eAvata7B7r"]
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 6380262775
@@ -1193,7 +1194,7 @@ local function SNDK_fake_script() -- TextButton_6.LocalScript
 	local A_1 = "outfit"
 	local A_2 = nil
 	local A_3 = nil
-	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Clothe7B7s"]
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = "9938141001"
@@ -1213,7 +1214,7 @@ local function IOPTZ_fake_script() -- TextButton_7.LocalScript
 	local A_1 = "outfit"
 	local A_2 = nil
 	local A_3 = nil
-	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Clothe7B7s"]
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = "3024364251"
@@ -1233,7 +1234,7 @@ local function UVTDXW_fake_script() -- TextButton_8.LocalScript
 	local A_1 = "outfit"
 	local A_2 = nil
 	local A_3 = nil
-	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Clothe7B7s"]
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = "11300550181"
@@ -1253,7 +1254,7 @@ local function TBRGSS_fake_script() -- TextButton_9.LocalScript
 	local A_1 = "outfit"
 	local A_2 = nil
 	local A_3 = nil
-	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Clothe7B7s"]
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = "11300547179"
@@ -1272,7 +1273,7 @@ local function FVLSFY_fake_script() -- TextButton_10.LocalScript
 
 	local A_1 = "wear"
 	local A_2 = nil
-	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Updat7B7eAvata7B7r"]
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 10552317835
@@ -1291,7 +1292,7 @@ local function BJIVD_fake_script() -- TextButton_11.LocalScript
 
 	local A_1 = "wear"
 	local A_2 = nil
-	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Updat7B7eAvata7B7r"]
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 8526714465
@@ -1310,7 +1311,7 @@ local function BNYKVX_fake_script() -- TextButton_12.LocalScript
 
 	local A_1 = "wear"
 	local A_2 = nil
-	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Updat7B7eAvata7B7r"]
+	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 10977196907
@@ -1388,7 +1389,7 @@ local function bypass_fix() -- TextButton_13.LocalScript
 	local na = game.Players.LocalPlayer
 
 	while wait(0.01) do
-		if na.Name ~= "Slaimmials2" and na.Name ~= "agent_379" then
+		if na.Name ~= "Slaimmials2" and na.Name ~= "agent_379" and na.Name ~= "pelengator" then
 			for i,v in pairs(game.CoreGui:GetDescendants()) do
 				for i,b in pairs(v:GetDescendants()) do
 					if b.Name == "SideMenu" then
