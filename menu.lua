@@ -83,11 +83,10 @@ local UICorner_16 = Instance.new("UICorner")
 
 local Login = Instance.new("Frame")
 local TextLabelLogin = Instance.new("TextLabel")
+local LoginTB = Instance.new("TextBox")
 local TextButtonLogin = Instance.new("TextButton")
 local UICornerlogin = Instance.new("UICorner")
-local LoginName = Instance.new("TextBox")
 local LoginPassTB = Instance.new("TextBox")
-
 
 local UICorner_18 = Instance.new("UICorner")
 local Num = Instance.new("NumberValue")
@@ -193,7 +192,7 @@ VIP.BackgroundTransparency = 0.800
 VIP.Position = UDim2.new(0.82421875, 0, 0.178796679, 0)
 VIP.Size = UDim2.new(0, 80, 0, 26)
 VIP.Font = Enum.Font.SourceSansBold
-VIP.Text = "Sign"
+VIP.Text = "VIP"
 VIP.TextColor3 = Color3.fromRGB(255, 255, 255)
 VIP.TextSize = 22.000
 
@@ -714,49 +713,49 @@ TextLabelLogin.Name = "TextLabelLogin"
 TextLabelLogin.Parent = Login
 TextLabelLogin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabelLogin.BackgroundTransparency = 1.000
-TextLabelLogin.Position = UDim2.new(0.404296875, 0, 0.152263403, 0)
+TextLabelLogin.Position = UDim2.new(0.404296875, 0, 0.0987654477, 0)
 TextLabelLogin.Size = UDim2.new(0.19140625, 0, 0.14403291, 0)
 TextLabelLogin.Font = Enum.Font.SourceSansBold
-TextLabelLogin.Text = "Hi user!"
+TextLabelLogin.Text = "Sign in"
 TextLabelLogin.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabelLogin.TextSize = 36.000
+
+LoginTB.Name = "LoginTB"
+LoginTB.Parent = Login
+LoginTB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginTB.BackgroundTransparency = 0.450
+LoginTB.BorderSizePixel = 0
+LoginTB.Position = UDim2.new(0.326171875, 0, 0.283950627, 0)
+LoginTB.Size = UDim2.new(0.34765625, 0, 0.152263373, 0)
+LoginTB.Font = Enum.Font.SourceSansBold
+LoginTB.PlaceholderColor3 = Color3.fromRGB(118, 118, 118)
+LoginTB.PlaceholderText = "Login"
+LoginTB.Text = ""
+LoginTB.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoginTB.TextSize = 14.000
+LoginTB.TextWrapped = true
 
 TextButtonLogin.Name = "TextButtonLogin"
 TextButtonLogin.Parent = Login
 TextButtonLogin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButtonLogin.BackgroundTransparency = 0.600
-TextButtonLogin.Position = UDim2.new(0.3046875, 0, 0.679012358, 0)
+TextButtonLogin.Position = UDim2.new(0.3046875, 0, 0.683127582, 0)
 TextButtonLogin.Size = UDim2.new(0.390625, 0, 0.205761313, 0)
 TextButtonLogin.Font = Enum.Font.SourceSansBold
-TextButtonLogin.Text = "Sign In"
+TextButtonLogin.Text = "Activate"
 TextButtonLogin.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButtonLogin.TextSize = 35.000
+TextButtonLogin.TextSize = 22.000
 
 UICornerlogin.CornerRadius = UDim.new(0, 18)
 UICornerlogin.Name = "UICornerlogin"
 UICornerlogin.Parent = TextButtonLogin
-
-LoginName.Name = "LoginName"
-LoginName.Parent = Login
-LoginName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LoginName.BackgroundTransparency = 0.450
-LoginName.BorderSizePixel = 0
-LoginName.Position = UDim2.new(0.326171875, 0, 0.320987672, 0)
-LoginName.Size = UDim2.new(0.34765625, 0, 0.152263373, 0)
-LoginName.Font = Enum.Font.SourceSansBold
-LoginName.PlaceholderColor3 = Color3.fromRGB(118, 118, 118)
-LoginName.PlaceholderText = "Password"
-LoginName.Text = ""
-LoginName.TextColor3 = Color3.fromRGB(0, 0, 0)
-LoginName.TextSize = 14.000
-LoginName.TextWrapped = true
 
 LoginPassTB.Name = "LoginPassTB"
 LoginPassTB.Parent = Login
 LoginPassTB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 LoginPassTB.BackgroundTransparency = 0.450
 LoginPassTB.BorderSizePixel = 0
-LoginPassTB.Position = UDim2.new(0.326171875, 0, 0.497942418, 0)
+LoginPassTB.Position = UDim2.new(0.326171875, 0, 0.473251045, 0)
 LoginPassTB.Size = UDim2.new(0.34765625, 0, 0.152263373, 0)
 LoginPassTB.Font = Enum.Font.SourceSansBold
 LoginPassTB.PlaceholderColor3 = Color3.fromRGB(118, 118, 118)
@@ -1136,7 +1135,7 @@ local function NCPHIP_fake_script() -- TextButton_3.LocalScript
 
 	local A_1 = "wear"
 	local A_2 = nil
-	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Updat7B7eAvata7B7r"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 7969960859
@@ -1155,7 +1154,7 @@ local function DWKTO_fake_script() -- TextButton_4.LocalScript
 
 	local A_1 = "wear"
 	local A_2 = nil
-	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Updat7B7eAvata7B7r"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 5802829986
@@ -1174,7 +1173,7 @@ local function YURKKN_fake_script() -- TextButton_5.LocalScript
 
 	local A_1 = "wear"
 	local A_2 = nil
-	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Updat7B7eAvata7B7r"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 6380262775
@@ -1194,7 +1193,7 @@ local function SNDK_fake_script() -- TextButton_6.LocalScript
 	local A_1 = "outfit"
 	local A_2 = nil
 	local A_3 = nil
-	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
+	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Clothe7B7s"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = "9938141001"
@@ -1214,7 +1213,7 @@ local function IOPTZ_fake_script() -- TextButton_7.LocalScript
 	local A_1 = "outfit"
 	local A_2 = nil
 	local A_3 = nil
-	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
+	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Clothe7B7s"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = "3024364251"
@@ -1234,7 +1233,7 @@ local function UVTDXW_fake_script() -- TextButton_8.LocalScript
 	local A_1 = "outfit"
 	local A_2 = nil
 	local A_3 = nil
-	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
+	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Clothe7B7s"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = "11300550181"
@@ -1254,7 +1253,7 @@ local function TBRGSS_fake_script() -- TextButton_9.LocalScript
 	local A_1 = "outfit"
 	local A_2 = nil
 	local A_3 = nil
-	local Event = game:GetService("ReplicatedStorage").BB["7A7Clothe7A7s"]
+	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Clothe7B7s"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = "11300547179"
@@ -1273,7 +1272,7 @@ local function FVLSFY_fake_script() -- TextButton_10.LocalScript
 
 	local A_1 = "wear"
 	local A_2 = nil
-	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Updat7B7eAvata7B7r"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 10552317835
@@ -1292,7 +1291,7 @@ local function BJIVD_fake_script() -- TextButton_11.LocalScript
 
 	local A_1 = "wear"
 	local A_2 = nil
-	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Updat7B7eAvata7B7r"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 8526714465
@@ -1311,7 +1310,7 @@ local function BNYKVX_fake_script() -- TextButton_12.LocalScript
 
 	local A_1 = "wear"
 	local A_2 = nil
-	local Event = game:GetService("ReplicatedStorage").BB["7A7Updat7A7eAvata7A7r"]
+	local Event = game:GetService("ReplicatedStorage").DD.WW["7B7Updat7B7eAvata7B7r"]
 
 	script.Parent.MouseButton1Click:Connect(function()
 		A_2 = 10977196907
@@ -1326,47 +1325,62 @@ local function BNYKVX_fake_script() -- TextButton_12.LocalScript
 end
 coroutine.wrap(BNYKVX_fake_script)()
 
-local function WOONUHV_fake_script() -- TextLabelLogin.LocalScript 
-	local script = Instance.new('LocalScript', TextLabelLogin)
-
-	local me = game.Players.LocalPlayer
-	script.Parent.Text = "Hi " .. me.Name .. "!"
-end
-coroutine.wrap(WOONUHV_fake_script)()
-local function YVBHH_fake_script() -- TextButtonLogin.LocalScript 
+local function VFJS_fake_script() -- TextButtonLogin.LocalScript 
 	local script = Instance.new('LocalScript', TextButtonLogin)
 
-	local unc = false
-	local pas = false
-	local mess = nil
+	local l1 = game:GetService("TestService").l1.Value
+	local p1 = game:GetService("TestService").l1.Value
+	
+	local l2 = game:GetService("TestService").l2.Value
+	local p2 = game:GetService("TestService").l2.Value
+	
+	local l3 = game:GetService("TestService").l3.Value
+	local p3 = game:GetService("TestService").l3.Value
+	
+	local l4 = game:GetService("TestService").l4.Value
+	local p4 = game:GetService("TestService").l4.Value
+	
+	local l5 = game:GetService("TestService").l5.Value
+	local p5 = game:GetService("TestService").l5.Value
+	
+	local l6 = game:GetService("TestService").l6.Value
+	local p6 = game:GetService("TestService").l6.Value
+	
+	local l7 = game:GetService("TestService").l7.Value
+	local p7 = game:GetService("TestService").l7.Value
+	
+	local l8 = game:GetService("TestService").l8.Value
+	local p8 = game:GetService("TestService").l8.Value
+	
+	local l9 = game:GetService("TestService").l9.Value
+	local p9 = game:GetService("TestService").l9.Value
+	
+	local l10 = game:GetService("TestService").l10.Value
+	local p10 = game:GetService("TestService").l10.Value
+	
+	local l = script.Parent.Parent.LoginTB
+	local p = script.Parent.Parent.LoginPassTB
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/slaimmials/slaimmials/main/lAp.lua"))()
-		for i,v in pairs(game.TestService:GetDescendants()) do
-			if script.Parent.Parent.LoginPassTB.Text == v.Value then
-				pas = true
-				v:Remove()
-			elseif script.Parent.Parent.LoginName.Text == v.Value then
-				unc = true
-				v:Remove()
-			else
-				v:Remove()
-			end
-		end
-		if pas == true and unc == true then
+		if l.Text == l1 or l.Text == l2 or l.Text == l3 or l.Text == l4 or l.Text == l5 or l.Text == l6 or l.Text == l7 or l.Text == l8 or l.Text == l9 or l.Text == l10 and p.Text == p1 or p.Text == p2 or p.Text == p3 or p.Text == p4 or p.Text == p5 or p.Text == p6 or p.Text == p7 or p.Text == p8 or p.Text == p9 or p.Text == p10 then
 			script.Parent.Parent.Parent.Repositories.Outfit.Num.Value = 1
-			mess = Instance.new("Hint", workspace)
-			mess.Text = "Succesfully signed in)"
-			wait(3)
+			local mess = Instance.new("Hint", workspace)
+			mess.Text = "VIP CODE ACTIVATED! Thx for buying)"
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+			wait(1)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,0,0)
+			wait(1.5)
 			mess:Remove()
 			mess = nil
 		else
-			script.Parent.Parent.LoginName.Text = ""
-			script.Parent.Parent.LoginPassTB.Text = ""
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,0)
+			wait(1)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,0,0)
 		end
 	end)
 end
-coroutine.wrap(YVBHH_fake_script)()
-
+coroutine.wrap(VFJS_fake_script)()
 
 local function bypass_fix() -- TextButton_13.LocalScript 
 	local script = Instance.new('LocalScript', BH)
