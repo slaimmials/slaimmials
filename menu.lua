@@ -1456,9 +1456,12 @@ local function BFYGUB_fake_script() -- ESP.LocalScriptESP
 			script.Parent.Text = "Esp [OFF]"
 			for i,v in pairs(game.Players:GetDescendants()) do
 				if v.ClassName == "Player" then
-					v.Character.Highlight:Remove()
-					v.Character.Head.BillboardGui:Remove()
-				end	
+					for i,b in pairs(v.Character:GetDescendants()) do
+						if b.ClassName == "Highlight" or b.ClassName == "BillboardGui" then
+							b:Remove()
+						end
+					end
+				end
 			end
 		end
 	end)
