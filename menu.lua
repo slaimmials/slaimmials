@@ -98,6 +98,9 @@ local UpdatesScroll = Instance.new("ScrollingFrame")
 local TextLabelUPD = Instance.new("TextLabel")
 local Updates = Instance.new("TextButton")
 local UICornerButtonUPD = Instance.new("UICorner")
+local FLY = Instance.new("Frame")
+local TextLabelfly = Instance.new("TextLabel")
+local FLYTOGGLE = Instance.new("TextButton")
 
 
 --Properties:
@@ -870,6 +873,37 @@ Updates.TextSize = 25.000
 UICornerButtonUPD.Name = "UICornerButtonUPD"
 UICornerButtonUPD.Parent = Updates
 
+FLY.Name = "FLY"
+FLY.Parent = MAIN
+FLY.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FLY.BackgroundTransparency = 0.650
+FLY.BorderSizePixel = 0
+FLY.Position = UDim2.new(0.318063557, 0, 0.54088366, 0)
+FLY.Size = UDim2.new(0, 122, 0, 67)
+
+TextLabelfly.Name = "TextLabelfly"
+TextLabelfly.Parent = FLY
+TextLabelfly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabelfly.BackgroundTransparency = 1.000
+TextLabelfly.Position = UDim2.new(0.157348379, 0, 0, 0)
+TextLabelfly.Size = UDim2.new(0.680327892, 0, 0.373134315, 0)
+TextLabelfly.Font = Enum.Font.SourceSansBold
+TextLabelfly.Text = "Glide (Fly)"
+TextLabelfly.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabelfly.TextSize = 14.000
+
+FLYTOGGLE.Name = "FLYTOGGLE"
+FLYTOGGLE.Parent = FLY
+FLYTOGGLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FLYTOGGLE.BackgroundTransparency = 0.600
+FLYTOGGLE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FLYTOGGLE.Position = UDim2.new(0.157348365, 0, 0.373134345, 0)
+FLYTOGGLE.Size = UDim2.new(0.680327892, 0, 0.402985066, 0)
+FLYTOGGLE.Font = Enum.Font.SourceSansBold
+FLYTOGGLE.Text = "[OFF]"
+FLYTOGGLE.TextColor3 = Color3.fromRGB(0, 0, 0)
+FLYTOGGLE.TextSize = 14.000
+
 -- Scripts:
 
 local function FTEI_fake_script() -- Updates.LocalScript 
@@ -1506,3 +1540,37 @@ while wait(0.001) do
 	end
 end
 --]]
+
+local function LSXIP_fake_script() -- FLYTOGGLE.LocalScript 
+	local script = Instance.new('LocalScript', FLYTOGGLE)
+
+	local cc = 0
+	local hum = game.Players.LocalPlayer.Character.Humanoid
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if cc == 0 then
+			cc = 1
+			script.Parent.Text = "[ON]"
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+		elseif cc == 1 then
+			cc = 0
+			script.Parent.Text = "[OFF]"
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+		end
+	end)
+	
+	game:GetService("RunService").Stepped:Connect(function()
+		if cc == 1 then
+			wait(0.08)
+			--print(game.Players.LocalPlayer.Character.Humanoid.MoveDirection)
+			if hum.Jump == true then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0.5, 0)
+				--print("+1")
+			end    
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.Humanoid.MoveDirection / 1.5
+		end
+	end)
+	
+end
+coroutine.wrap(LSXIP_fake_script)()
+
