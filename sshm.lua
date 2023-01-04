@@ -285,7 +285,8 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 	
 	game:GetService("RunService").Stepped:Connect(function()
 		if game.Players.LocalPlayer.Character.Humanoid.Health <= 37 then
-			TeleportService:Teleport(game.PlaceId, LocalPlayer)
+			--TeleportService:Teleport(game.PlaceId, LocalPlayer)
+			char.Parent.LoadCharacter()
 			cc = 0
 			p5:Remove()
 		end
