@@ -288,7 +288,7 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 	
 	game:GetService("RunService").Stepped:Connect(function()
 		if game.Players.LocalPlayer.Character.Humanoid.Health <= 99 then
-			if game.Players.LocalPlayer.Team == game:GetService("Teams")["greeners"] then
+			--[[if game.Players.LocalPlayer.Team == game:GetService("Teams")["greeners"] then
 					
 				p6 = Instance.new("Part", workspace)
 				p6.Transparency = 0.6
@@ -309,8 +309,8 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 				Event = game:GetService("ReplicatedStorage").ChangeTeam
 				Event:FireServer(A_1)
 						
-			end
-			--TeleportService:Teleport(game.PlaceId, LocalPlayer)
+			end]]
+			TeleportService:Teleport(game.PlaceId, LocalPlayer)
 			--char.Humanoid.LoadCharacter()
 			cc = 0
 			p5:Remove()
