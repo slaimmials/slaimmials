@@ -266,6 +266,8 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 	local pm = game.Players.LocalPlayer:GetMouse()
 	local cc = 0
 	local char = game.Players.LocalPlayer.Character
+	local A_1 = nil
+	local Event = nil
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		if cc == 1 then
@@ -285,7 +287,20 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 	
 	game:GetService("RunService").Stepped:Connect(function()
 		if game.Players.LocalPlayer.Character.Humanoid.Health <= 37 then
-			TeleportService:Teleport(game.PlaceId, LocalPlayer)
+			if game.Players.LocalPlayer.Team == game:GetService("Teams")["greeners"] then
+						
+				A_1 = BrickColor.new("Cool yellow")
+				Event = game:GetService("ReplicatedStorage").ChangeTeam
+				Event:FireServer(A_1)
+						
+			elseif game.Players.LocalPlayer.Team == game:GetService("Teams")["sandoids"] then
+						
+				A_1 = BrickColor.new("Olivine")
+				Event = game:GetService("ReplicatedStorage").ChangeTeam
+				Event:FireServer(A_1)
+						
+			end
+			--TeleportService:Teleport(game.PlaceId, LocalPlayer)
 			--char.Humanoid.LoadCharacter()
 			cc = 0
 			p5:Remove()
