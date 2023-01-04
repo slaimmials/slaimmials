@@ -287,6 +287,7 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 		end
 	end)
 	
+	--[[
 	game:GetService("RunService").Stepped:Connect(function()
 		if game.Players.LocalPlayer.Character.Humanoid.Health <= 25 then
 			--[[if game.Players.LocalPlayer.Team == game:GetService("Teams")["greeners"] then
@@ -325,6 +326,7 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 		end
 		--if 
 	end)
+	--]]
 end
 coroutine.wrap(TIFKYLJ_fake_script)()
 local function MOZPTQF_fake_script() -- Build.LocalScript 
