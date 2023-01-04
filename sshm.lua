@@ -189,10 +189,32 @@ local function OGSWEN_fake_script() -- Ammo.LocalScript
 					end
 				end
 			end
+			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+				if v.ClassName == "Tool" then
+					for i,b in pairs(v:GetDescendants()) do
+						if b.ClassName == "NumberValue" and b.Name == "Ammo" then
+							b.Value = 9999
+						elseif b.ClassName == "DoubleConstrainedValue" and b.Name == "StoredAmmo" then
+							b.Value = 9999
+						end
+					end
+				end
+			end
 		elseif cch == 1 then
 			cch = 0
 			script.Parent.Text = "Infinity Ammo [OFF]"
 			for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+				if v.ClassName == "Tool" then
+					for i,b in pairs(v:GetDescendants()) do
+						if b.ClassName == "NumberValue" and b.Name == "Ammo" then
+							b.Value = 30
+						elseif b.ClassName == "DoubleConstrainedValue" and b.Name == "StoredAmmo" then
+							b.Value = 210
+						end
+					end
+				end
+			end
+			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
 				if v.ClassName == "Tool" then
 					for i,b in pairs(v:GetDescendants()) do
 						if b.ClassName == "NumberValue" and b.Name == "Ammo" then
