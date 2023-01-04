@@ -272,11 +272,12 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		if cc == 1 then
-        		
+        		script.Parent.Text = "Jump Hack [OFF]"
 			cc = 0
 			p5:Remove()
 		elseif cc == 0 then
 			cc = 1
+			script.Parent.Text = "Jump Hack [ON]"
 			p5 = Instance.new("Part", workspace)
 			p5.Transparency = 0.6
 			p5.Anchored = true
