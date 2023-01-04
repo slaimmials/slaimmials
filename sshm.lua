@@ -232,7 +232,7 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 	end)
 	
 	game:GetService("RunService").Stepped:Connect(function()
-		if game.Players.LocalPlayer.Character.Humanoid.Health <= 10 then 
+		if game.Players.LocalPlayer.Character.Humanoid.Health <= 25 then 
 			cc = 0
 			p5:Remove()
 		end
@@ -251,7 +251,7 @@ local function MOZPTQF_fake_script() -- Build.LocalScript
 	local script = Instance.new('LocalScript', Build)
 
 	math.randomseed(456)
-	game:GetService("RunService").Stepped:Connect(function()
+	--[[game:GetService("RunService").Stepped:Connect(function()
 		script.Parent.Name = math.random(10000000,99999999)
 		script.Name = math.random(10000000,99999999)
 		script.Parent.Jump.Name = math.random(10000000,99999999)
@@ -264,6 +264,6 @@ local function MOZPTQF_fake_script() -- Build.LocalScript
 		script.Parent.Sprint.LocalScript.Name = math.random(10000000,99999999)
 		script.Parent.TextLabel.Name = math.random(10000000,99999999)
 		script.Parent.TextLabel.Name = math.random(10000000,99999999)
-	end)
+	end)]]
 end
 coroutine.wrap(MOZPTQF_fake_script)()
