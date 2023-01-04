@@ -262,6 +262,7 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 	local Players = game:GetService("Players")
 	local LocalPlayer = Players.LocalPlayer
 	local p5 = nil
+	local p6 = nil
 	local jumping = false
 	local pm = game.Players.LocalPlayer:GetMouse()
 	local cc = 0
@@ -288,10 +289,19 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 	game:GetService("RunService").Stepped:Connect(function()
 		if game.Players.LocalPlayer.Character.Humanoid.Health <= 99 then
 			if game.Players.LocalPlayer.Team == game:GetService("Teams")["greeners"] then
-						
-				A_1 = BrickColor.new("Cool yellow")
-				Event = game:GetService("ReplicatedStorage").ChangeTeam
-				Event:FireServer(A_1)
+					
+				p6 = Instance.new("Part", workspace)
+				p6.Transparency = 0.6
+				p6.Anchored = true
+				p6.Size = Vector3.new(4, 1, 2)
+				p6.Position = char.HumanoidRootPart.Position + Vector3.new(0, -3.662, 0)
+				for i = 1,100 do
+					p6.Position = char.HumanoidRootPart.Position + Vector3.new(0, 3, 0)
+				end
+				p6:Remove()
+				--A_1 = BrickColor.new("Cool yellow")
+				--Event = game:GetService("ReplicatedStorage").ChangeTeam
+				--Event:FireServer(A_1)
 						
 			elseif game.Players.LocalPlayer.Team == game:GetService("Teams")["sandoids"] then
 						
