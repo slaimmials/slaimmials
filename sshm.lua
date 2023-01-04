@@ -209,7 +209,10 @@ end
 coroutine.wrap(OGSWEN_fake_script)()
 local function TIFKYLJ_fake_script() -- Jump.LocalScript 
 	local script = Instance.new('LocalScript', Jump)
-
+	
+	local TeleportService = game:GetService("TeleportService")
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
 	local p5 = nil
 	local jumping = false
 	local pm = game.Players.LocalPlayer:GetMouse()
@@ -218,6 +221,7 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		if cc == 1 then
+        		
 			cc = 0
 			p5:Remove()
 		elseif cc == 0 then
@@ -232,7 +236,8 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 	end)
 	
 	game:GetService("RunService").Stepped:Connect(function()
-		if game.Players.LocalPlayer.Character.Humanoid.Health <= 25 then 
+		if game.Players.LocalPlayer.Character.Humanoid.Health <= 25 then
+			TeleportService:Teleport(game.PlaceId, LocalPlayer)
 			cc = 0
 			p5:Remove()
 		end
