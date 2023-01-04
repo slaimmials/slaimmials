@@ -288,7 +288,7 @@ local function TIFKYLJ_fake_script() -- Jump.LocalScript
 	end)
 	
 	game:GetService("RunService").Stepped:Connect(function()
-		if game.Players.LocalPlayer.Character.Humanoid.Health <= 99 then
+		if game.Players.LocalPlayer.Character.Humanoid.Health <= 25 then
 			--[[if game.Players.LocalPlayer.Team == game:GetService("Teams")["greeners"] then
 					
 				p6 = Instance.new("Part", workspace)
