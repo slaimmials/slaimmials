@@ -185,6 +185,9 @@ local function OGSWEN_fake_script() -- Ammo.LocalScript
 							b.Value = 9999
 						elseif b.ClassName == "DoubleConstrainedValue" and b.Name == "StoredAmmo" then
 							b.Value = 9999
+						end--
+						if b.ClassName == "BoolValue" and b.Name == "Emperrado" then
+							b.Value = false
 						end
 					end
 				end
@@ -221,6 +224,29 @@ local function OGSWEN_fake_script() -- Ammo.LocalScript
 							b.Value = 30
 						elseif b.ClassName == "DoubleConstrainedValue" and b.Name == "StoredAmmo" then
 							b.Value = 210
+						end
+					end
+				end
+			end
+		end
+	end)
+		
+	game:GetService("RunService").Stepped:Connect(function()
+		if cc == 1 then
+			for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+				if v.ClassName == "Tool" then
+					for i,b in pairs(v:GetDescendants()) do
+						if b.ClassName == "BoolValue" and b.Name == "Emperrado" then
+							b.Value = false
+						end
+					end
+				end
+			end
+			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+				if v.ClassName == "Tool" then
+					for i,b in pairs(v:GetDescendants()) do
+						if b.ClassName == "BoolValue" and b.Name == "Emperrado" then
+							b.Value = false
 						end
 					end
 				end
