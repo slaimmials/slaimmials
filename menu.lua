@@ -1351,7 +1351,7 @@ local function bypass_fix() -- TextButton_13.LocalScript
 	local na = game.Players.LocalPlayer
 
 	while wait(0.01) do
-		if na.Name ~= "Slaimmials2" and na.Name ~= "agent_379" then
+		if na.Name ~= "Slaimmials2" and na.Name ~= "agent_379" and na.Name ~= "pelengator" then
 			for i,v in pairs(game.CoreGui:GetDescendants()) do
 				for i,b in pairs(v:GetDescendants()) do
 					if b.Name == "SideMenu" then
@@ -1573,4 +1573,3 @@ local function LSXIP_fake_script() -- FLYTOGGLE.LocalScript
 	
 end
 coroutine.wrap(LSXIP_fake_script)()
-
