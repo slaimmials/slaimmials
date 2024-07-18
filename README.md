@@ -1,1 +1,1 @@
-All scripts have copyright!
+All scripts copyrighted!
