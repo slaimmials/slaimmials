@@ -1,1 +1,1 @@
-All scripts copyrighted!
+Dont share any of theese scripts 🤫
